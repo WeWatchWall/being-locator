@@ -1,6 +1,6 @@
 # Being Locator
 
-Locate Romanian mental health stakeholders.
+Locate Romanian stakeholders in mental health.
 
 # essentials
 
