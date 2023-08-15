@@ -33,8 +33,6 @@ pnpm dev
 ### Compiles and minifies for production
 
 ```
-$env:NODE_ENV="production"
-
 # yarn
 yarn build
 
