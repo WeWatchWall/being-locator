@@ -19,6 +19,7 @@ const routes = [
 ]
 
 const router = createRouter({
+  // Set this to `process.env.BASE_URL` when testing locally.
   history: createWebHistory('/being-locator/'),
   routes,
 })
