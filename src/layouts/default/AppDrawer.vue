@@ -67,6 +67,4 @@
 //
 import { useAppStore } from '@/store/app';
 const appStore = useAppStore();
-
-appStore.initTranslations();
 </script>

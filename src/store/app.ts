@@ -143,6 +143,7 @@ export const useAppStore = defineStore('app', {
           options: ['Youth', 'Youth and Adults']
         },
         other: {
+          title: 'Locator',
           filter: 'Filter',
           field: 'Field',
           category: 'Category',
@@ -183,6 +184,7 @@ export const useAppStore = defineStore('app', {
           options: ['Tineri', 'Tineri și Adulți']
         },
         other: {
+          title: 'Hartă',
           filter: 'Filtrează',
           field: 'Domeniu',
           category: 'Categorie',

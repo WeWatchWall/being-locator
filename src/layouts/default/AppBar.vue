@@ -11,7 +11,7 @@
       max-width="200"
       contain
     ></v-img>
-    <v-app-bar-title>Locator</v-app-bar-title>
+    <v-app-bar-title>{{ (<any>appStore.translations.current).other.title }}</v-app-bar-title>
 
     <v-spacer></v-spacer>
     <v-btn
@@ -23,7 +23,9 @@
 </template>
 
 <script lang="ts" setup>
-  //
-  import { useAppStore } from '@/store/app';
-  const appStore = useAppStore();
+//
+import { useAppStore } from '@/store/app';
+const appStore = useAppStore();
+
+appStore.initTranslations();
 </script>
