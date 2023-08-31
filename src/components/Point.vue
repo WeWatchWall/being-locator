@@ -32,7 +32,7 @@
           <template v-slot:prepend>
             <v-icon color="secondary"></v-icon>
           </template>
-          Map
+          {{ (<any>appStore.translations.current).other.map }}
         </v-btn>
       </v-card-actions>
     </v-card>

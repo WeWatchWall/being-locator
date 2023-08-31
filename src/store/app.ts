@@ -150,6 +150,7 @@ export const useAppStore = defineStore('app', {
           site: 'Site',
           tel: 'Tel',
           address: 'Address',
+          map: 'Map'
         }
       },
       RO: {
@@ -191,6 +192,7 @@ export const useAppStore = defineStore('app', {
           site: 'Pagina',
           tel: 'Tel',
           address: 'Adresă',
+          map: 'Hartă'
         }
       },
       current: {}
