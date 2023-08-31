@@ -33,7 +33,7 @@ function parseCSV(csv?: string) {
 async function getData(lang = Langs.EN) {
   const DBName = `DB_${lang}`;
   let DB = (<any>alasql).databases[DBName];
-  if (DB) { return getJoinData(DB);  }
+  if (DB) { return getJoinData(DB); }
 
   DB = new (<any>alasql).Database(DBName);
   // console.log((<any>alasql).databases);
@@ -109,6 +109,8 @@ export const useAppStore = defineStore('app', {
     mapToList: {
       point: null
     },
+
+    /* #region Translations */
     translations: {
       lang: Langs.RO,
       EN: {
@@ -124,8 +126,8 @@ export const useAppStore = defineStore('app', {
         category: {
           name: 'Category',
           options: [
-            'Governmental', 'Research & Academia', 'Private', 
-            'Non-governmental organisations', 'Education', 
+            'Governmental', 'Research & Academia', 'Private',
+            'Non-governmental organisations', 'Education',
             'Self-organised communities', 'Philantropies',
             'Parents & family communities', 'Media', 'Other'
           ]
@@ -166,8 +168,8 @@ export const useAppStore = defineStore('app', {
         category: {
           name: 'Categorie',
           options: [
-            'Guvernamentală', 'Cercetare și Academică', 'Private', 
-            'Organizații Non-Guvernamentale', 'Educație', 
+            'Guvernamentală', 'Cercetare și Academică', 'Private',
+            'Organizații Non-Guvernamentale', 'Educație',
             'Comunități Organizate', 'Filantropii',
             'Comunități Părinți și Familii', 'Media', 'Alta'
           ]
@@ -197,12 +199,13 @@ export const useAppStore = defineStore('app', {
       },
       current: {}
     }
+    /* #endregion */
   }),
   getters: {
-    mapFilter: (state) => state.list.filter.filter((point: any) => 
+    mapFilter: (state) => state.list.filter.filter((point: any) =>
       point.Latitude > state.map.bounds[0][0] &&
       point.Latitude < state.map.bounds[1][0] &&
-        
+
       point.Longitude > state.map.bounds[0][1] &&
       point.Longitude < state.map.bounds[1][1]
     )
@@ -232,7 +235,7 @@ export const useAppStore = defineStore('app', {
     },
     switchLang() {
       // Set the UI language.
-      this.translations.lang = 
+      this.translations.lang =
         this.translations.lang === Langs.RO ? Langs.EN : Langs.RO;
       this.initTranslations();
 
@@ -241,6 +244,9 @@ export const useAppStore = defineStore('app', {
 
       // Reset the drawer.
       this.drawer.value = [null, null, null, null, null];
+
+      // Reset the current point.
+      this.mapToList.point = null;
     }
   }
 })
