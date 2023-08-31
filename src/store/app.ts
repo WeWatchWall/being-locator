@@ -237,9 +237,6 @@ export const useAppStore = defineStore('app', {
 
       // Reset the drawer.
       this.drawer.value = [null, null, null, null, null];
-
-      // Reset the filter.
-      this.filterList();
     }
   }
 })
