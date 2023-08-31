@@ -12,6 +12,13 @@
       contain
     ></v-img>
     <v-app-bar-title>Locator</v-app-bar-title>
+
+    <v-spacer></v-spacer>
+    <v-btn
+      @click.stop="appStore.switchLang()"
+    >
+      {{ appStore.translations.lang }}
+    </v-btn>
   </v-app-bar>
 </template>
 

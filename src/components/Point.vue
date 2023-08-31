@@ -9,14 +9,14 @@
       <v-card-text>
         {{ point.Expertise }}<br><br>
 
-        Field: {{ point.Field }}<br>
-        Category: {{ point.Category }}<br><br>
+        {{ (<any>appStore.translations.current).other.field }}: {{ point.Field }}<br>
+          {{ (<any>appStore.translations.current).other.category }}: {{ point.Category }}<br><br>
 
         
         <address class="mx-4">
-          Site: <a :href="point.Site" target="_blank"> {{ point.Site }}</a><br>
-          Tel: <a :href="createTel" target="_blank">{{ point.Telephone }}</a><br>
-          Address: <a :href="createAddress" target="_blank">{{ point.Address }}</a>
+          {{ (<any>appStore.translations.current).other.site }}: <a :href="point.Site" target="_blank"> {{ point.Site }}</a><br>
+          {{ (<any>appStore.translations.current).other.tel }}: <a :href="createTel" target="_blank">{{ point.Telephone }}</a><br>
+          {{ (<any>appStore.translations.current).other.address }}: <a :href="createAddress" target="_blank">{{ point.Address }}</a>
         </address>
       </v-card-text>
 

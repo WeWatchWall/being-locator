@@ -5,57 +5,40 @@
   >
     <v-select
       clearable
-      label="Field"
-      :items="[
-        'Health related', 'Education related', 'Employment related',
-        'Environment related', 'Sports related', 'Youth related',
-        'Sustainability', 'Religious organizations', 'Social related',
-        'Political related', 'Family related', 'Art related', 'Other'
-      ]"
+      :label="(<any>appStore.translations.current).field.name"
+      :items="(<any>appStore.translations.current).field.options"
       v-model="appStore.drawer.value[0]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      label="Category"
-      :items="[
-        'Governmental', 'Research & Academia', 'Private', 
-        'Non-governmental organisations', 'Education', 
-        'Self-organised communities', 'Philantropies',
-        'Parents & family communities', 'Media', 'Other',
-        
-      ]"
+      :label="(<any>appStore.translations.current).category.name"
+      :items="(<any>appStore.translations.current).category.options"
       v-model="appStore.drawer.value[1]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      label="Influence"
-      :items="[
-        'Low', 'Medium', 'High'
-      ]"
+      :label="(<any>appStore.translations.current).influence.name"
+      :items="(<any>appStore.translations.current).influence.options"
       v-model="appStore.drawer.value[2]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      label="Activity"
-      :items="[
-        'Low', 'Medium', 'High'
-      ]"
+      :label="(<any>appStore.translations.current).activity.name"
+      :items="(<any>appStore.translations.current).activity.options"
       v-model="appStore.drawer.value[3]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      label="Youth"
-      :items="[
-        'Youth', 'Youth and Adults'
-      ]"
+      :label="(<any>appStore.translations.current).youth.name"
+      :items="(<any>appStore.translations.current).youth.options"
       v-model="appStore.drawer.value[4]"
       class="my-2 mx-2"
     ></v-select>
@@ -75,13 +58,15 @@
         <v-icon color="primary"></v-icon>
       </template>
 
-      Filter
+      {{ (<any>appStore.translations.current).other.filter }}
     </v-btn>
   </v-navigation-drawer>
 </template>
 
 <script lang="ts" setup>
-  //
-  import { useAppStore } from '@/store/app';
-  const appStore = useAppStore();
+//
+import { useAppStore } from '@/store/app';
+const appStore = useAppStore();
+
+appStore.initTranslations();
 </script>

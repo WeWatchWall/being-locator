@@ -2,6 +2,7 @@
 import alasql from 'alasql';
 import papa from 'papaparse';
 import { defineStore } from 'pinia'
+import { Langs } from './langs';
 
 /* #region Initialization functions. */
 async function fetchFile(fileName: string): Promise<string | undefined> {
@@ -29,7 +30,7 @@ function parseCSV(csv?: string) {
   }).data;
 }
 
-async function getData(lang: string = 'EN') {
+async function getData(lang = Langs.EN) {
   const DBName = `DB_${lang}`;
   let DB = (<any>alasql).databases[DBName];
   if (DB) { return getJoinData(DB);  }
@@ -91,7 +92,6 @@ export const useAppStore = defineStore('app', {
       value: [null, null, null, null, null]
     },
     list: {
-      init: false,
       points: [],
       filter: [],
       // mapFilter: [],
@@ -108,6 +108,90 @@ export const useAppStore = defineStore('app', {
     },
     mapToList: {
       point: null
+    },
+    translations: {
+      lang: Langs.RO,
+      EN: {
+        field: {
+          name: 'Field',
+          options: [
+            'Health', 'Education', 'Employment',
+            'Environment', 'Sports', 'Youth',
+            'Sustainability', 'Religion', 'Social',
+            'Political', 'Family', 'Art', 'Other'
+          ]
+        },
+        category: {
+          name: 'Category',
+          options: [
+            'Governmental', 'Research & Academia', 'Private', 
+            'Non-governmental organisations', 'Education', 
+            'Self-organised communities', 'Philantropies',
+            'Parents & family communities', 'Media', 'Other'
+          ]
+        },
+        influence: {
+          name: 'Influence',
+          options: ['Low', 'Medium', 'High']
+        },
+        activity: {
+          name: 'Activity',
+          options: ['Low', 'Medium', 'High']
+        },
+        youth: {
+          name: 'Youth',
+          options: ['Youth', 'Youth and Adults']
+        },
+        other: {
+          filter: 'Filter',
+          field: 'Field',
+          category: 'Category',
+          site: 'Site',
+          tel: 'Tel',
+          address: 'Address',
+        }
+      },
+      RO: {
+        field: {
+          name: 'Domeniu',
+          options: [
+            'Sănătate', 'Educație', 'Muncă',
+            'Mediu', 'Sport', 'Tineri',
+            'Sustainabilitate', 'Religie', 'Social',
+            'Politic', 'Familie', 'Artă', 'Altul'
+          ]
+        },
+        category: {
+          name: 'Categorie',
+          options: [
+            'Guvernamentală', 'Cercetare și Academică', 'Private', 
+            'Organizații Non-Guvernamentale', 'Educație', 
+            'Comunități Organizate', 'Filantropii',
+            'Comunități Părinți și Familii', 'Media', 'Alta'
+          ]
+        },
+        influence: {
+          name: 'Influență',
+          options: ['Mică', 'Medie', 'Mare']
+        },
+        activity: {
+          name: 'Activitate',
+          options: ['Mică', 'Medie', 'Mare']
+        },
+        youth: {
+          name: 'Tineri',
+          options: ['Tineri', 'Tineri și Adulți']
+        },
+        other: {
+          filter: 'Filtrează',
+          field: 'Domeniu',
+          category: 'Categorie',
+          site: 'Pagina',
+          tel: 'Tel',
+          address: 'Adresă',
+        }
+      },
+      current: {}
     }
   }),
   getters: {
@@ -121,13 +205,9 @@ export const useAppStore = defineStore('app', {
   },
   actions: {
     async initList() {
-      if (this.list.init) { return; }
-
       // console.log(await getData());
-      this.list.points = await getData();
+      this.list.points = await getData(this.translations.lang);
       this.list.filter = this.list.points;
-
-      this.list.init = true;
     },
     filterList() {
       const { value } = this.drawer;
@@ -141,6 +221,25 @@ export const useAppStore = defineStore('app', {
 
         return true;
       });
+    },
+    initTranslations() {
+      this.translations.current =
+        this.translations[this.translations.lang];
+    },
+    switchLang() {
+      // Set the UI language.
+      this.translations.lang = 
+        this.translations.lang === Langs.RO ? Langs.EN : Langs.RO;
+      this.initTranslations();
+
+      // Get the translated data.
+      this.initList();
+
+      // Reset the drawer.
+      this.drawer.value = [null, null, null, null, null];
+
+      // Reset the filter.
+      this.filterList();
     }
   }
 })
