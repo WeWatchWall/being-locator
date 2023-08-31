@@ -1,6 +1,5 @@
 // Utilities
 import alasql from 'alasql';
-import { get } from 'http';
 import papa from 'papaparse';
 import { defineStore } from 'pinia'
 
@@ -31,7 +30,7 @@ function parseCSV(csv?: string) {
 }
 
 async function getData(lang: string = 'EN') {
-  const DBName = `${lang}DB`;
+  const DBName = `DB_${lang}`;
   let DB = (<any>alasql).databases[DBName];
   if (DB) { return getJoinData(DB);  }
 
@@ -41,7 +40,7 @@ async function getData(lang: string = 'EN') {
   DB.exec(`
     CREATE TABLE IF NOT EXISTS Stakeholders(
       ID TEXT, Organization TEXT, Influence TEXT, Activity TEXT,
-      Description TEXT, Youth TEXT, Field TEXT, Category TEXT,
+      Expertise TEXT, Youth TEXT, Field TEXT, Category TEXT,
       Level TEXT, Site TEXT);
   `);
 
@@ -51,7 +50,8 @@ async function getData(lang: string = 'EN') {
       Address TEXT, Latitude DOUBLE, Longitude DOUBLE);
   `);
 
-  DB.tables.Stakeholders.data = parseCSV(await fetchFile('Stakeholders'));
+  DB.tables.Stakeholders.data =
+    parseCSV(await fetchFile(`Stakeholders${lang}`));
   DB.tables.Locations.data = parseCSV(await fetchFile('Locations'));
 
   return getJoinData(DB);
@@ -62,7 +62,7 @@ function getJoinData(DB: any) {
     SELECT 
       Locations.ID as ID,
       Stakeholders.Organization as Org,
-      Stakeholders.Description as Description,
+      Stakeholders.Expertise as Expertise,
       Stakeholders.Field as Field,
       Stakeholders.Category as Category,
       Stakeholders.Influence as Influence,

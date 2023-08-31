@@ -7,7 +7,7 @@
       </v-card-title>
         
       <v-card-text>
-        {{ point.Description }}<br><br>
+        {{ point.Expertise }}<br><br>
 
         Field: {{ point.Field }}<br>
         Category: {{ point.Category }}<br><br>
