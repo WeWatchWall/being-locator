@@ -40,11 +40,14 @@
 
 <script lang="ts" setup>
 import { useAppStore } from '@/store/app';
+import { computed } from 'vue';
 
 const props = defineProps(['point']);
 const appStore = useAppStore();
 
-const createID = 'point-' + props.point.ID;
-const createTel = 'tel:' + props.point.Telephone;
-const createAddress = 'https://www.google.com/maps/search/?api=1&query=' + props.point.Address;
+const createID = computed(() => 'point-' + props.point.ID);
+const createTel = computed(() =>'tel:' + props.point.Telephone);
+const createAddress = computed(() =>
+  'https://www.google.com/maps/search/?api=1&query=' + props.point.Address
+);
 </script>

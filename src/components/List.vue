@@ -21,7 +21,9 @@
           <v-pagination :length="numPages" v-model="page"></v-pagination>
         </template>
       </v-data-iterator>
-      
+      <br>
+      <br>
+      <br>
     </div>
 </template>
 

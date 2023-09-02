@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts" setup>
-  import DefaultBar from './AppBar.vue'
+import DefaultBar from './AppBar.vue'
 import DefaultView from './View.vue'
-  import DefaultAppDrawer from './AppDrawer.vue'
+import DefaultAppDrawer from './AppDrawer.vue'
 </script>
