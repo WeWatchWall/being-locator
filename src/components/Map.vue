@@ -5,10 +5,13 @@
 
 <script lang="ts" setup>
 import L from 'leaflet';
+import "leaflet.markercluster";
 import { onMounted, watch } from 'vue';
 import { useAppStore } from '@/store/app';
 
 const appStore = useAppStore();
+const MEDIUM_ZOOM = 14; 
+
 
 onMounted(() => {
   /* #region Map initialization. */
@@ -29,6 +32,7 @@ onMounted(() => {
 
   /* #region Map events. */
   map.on('zoomend', function () {
+    // console.log(map.getZoom());
     const bounds = map.getBounds();
     appStore.map.bounds = [
       [bounds.getSouthWest().lat, bounds.getSouthWest().lng],
@@ -50,7 +54,7 @@ onMounted(() => {
   const mapMarkers: {
     map: L.Map,
     markers?: L.Marker[],
-    layer?: L.LayerGroup
+    layer?: any
   } = {
     map: map
   };
@@ -77,7 +81,10 @@ onMounted(() => {
         return result;
       });
 
-    mapMarkers.layer = L.layerGroup(mapMarkers.markers);
+    mapMarkers.layer = window.L.markerClusterGroup({
+      disableClusteringAtZoom: MEDIUM_ZOOM
+    });
+    mapMarkers.layer.addLayers(mapMarkers.markers);
     map.addLayer(mapMarkers.layer);
   };
 
@@ -96,7 +103,7 @@ onMounted(() => {
     if (!marker) { return; }
 
     marker.openPopup();
-    map.setView(marker.getLatLng(), Math.max(map.getZoom(), 14));
+    map.setView(marker.getLatLng(), Math.max(map.getZoom(), MEDIUM_ZOOM));
   };
 
   watch(appStore.listToMap, (mutation, _state) => {
