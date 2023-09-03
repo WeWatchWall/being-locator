@@ -82,7 +82,7 @@ onMounted(() => {
       });
 
     mapMarkers.layer = window.L.markerClusterGroup({
-      disableClusteringAtZoom: MEDIUM_ZOOM
+      maxClusterRadius: 30
     });
     mapMarkers.layer.addLayers(mapMarkers.markers);
     map.addLayer(mapMarkers.layer);
