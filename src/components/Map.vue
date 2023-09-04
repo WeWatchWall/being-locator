@@ -16,127 +16,127 @@ const MEDIUM_ZOOM = 14;
 function getIcon(point: any): L.Icon {
   if (point.Field === appStore.translations[appStore.translations.lang].field.options[0]) {
     return L.icon({
-      iconUrl: '/img/icons8-pharmacy-64.png',
+      iconUrl: './img/icons8-pharmacy-64.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[1]) {
     return L.icon({
-      iconUrl: '/img/icons8-library-64.png',
+      iconUrl: './img/icons8-library-64.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[2]) {
     return L.icon({
-      iconUrl: '/img/icons8-labor-64.png',
+      iconUrl: './img/icons8-labor-64.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[3]) {
     return L.icon({
-      iconUrl: '/img/icons8-environment-48.png',
+      iconUrl: './img/icons8-environment-48.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[4]) {
     return L.icon({
-      iconUrl: '/img/icons8-gym-48.png',
+      iconUrl: './img/icons8-gym-48.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[5]) {
     return L.icon({
-      iconUrl: '/img/icons8-youth-40.png',
+      iconUrl: './img/icons8-youth-40.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[6]) {
     return L.icon({
-      iconUrl: '/img/icons8-recycle-48.png',
+      iconUrl: './img/icons8-recycle-48.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[7]) {
     return L.icon({
-      iconUrl: '/img/icons8-prayer-48.png',
+      iconUrl: './img/icons8-prayer-48.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[8]) {
     return L.icon({
-      iconUrl: '/img/icons8-social-48.png',
+      iconUrl: './img/icons8-social-48.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[9]) {
     return L.icon({
-      iconUrl: '/img/icons8-political-64.png',
+      iconUrl: './img/icons8-political-64.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[10]) {
     return L.icon({
-      iconUrl: '/img/icons8-family-40.png',
+      iconUrl: './img/icons8-family-40.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[11]) {
     return L.icon({
-      iconUrl: '/img/icons8-art-48.png',
+      iconUrl: './img/icons8-art-48.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[12]) {
     return L.icon({
-      iconUrl: '/img/icons8-other-48.png',
+      iconUrl: './img/icons8-other-48.png',
       iconSize: [41, 41],
       iconAnchor: [30, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [15, 41]
     });
   } else {
     return L.icon({
-      iconUrl: '/css/images/marker-icon.png',
+      iconUrl: './css/images/marker-icon.png',
       iconSize: [25, 41],
       iconAnchor: [25, 41],
-      shadowUrl: '/css/images/marker-shadow.png',
+      shadowUrl: './css/images/marker-shadow.png',
       shadowSize: [41, 41],
       shadowAnchor: [25, 41]
     });
