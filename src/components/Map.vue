@@ -264,7 +264,7 @@ onMounted(() => {
     if (!marker) { return; }
 
     // TODO: Change the marker?
-    // marker.openTooltip();
+    marker.openTooltip();
     map.setView(marker.getLatLng(), Math.max(map.getZoom(), MEDIUM_ZOOM));
   };
 
