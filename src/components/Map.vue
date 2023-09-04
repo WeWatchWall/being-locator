@@ -168,6 +168,16 @@ onMounted(() => {
       [bounds.getSouthWest().lat, bounds.getSouthWest().lng],
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]
     ];
+
+    if (map.getZoom() >= MEDIUM_ZOOM) {
+      mapMarkers.markers?.forEach((marker: L.Marker) => {
+        marker.openTooltip();
+      });
+    } else {
+      mapMarkers.markers?.forEach((marker: L.Marker) => {
+        marker.closeTooltip();
+      });
+    }
   });
 
   map.on('moveend', function () {
@@ -177,6 +187,18 @@ onMounted(() => {
       [bounds.getSouthWest().lat, bounds.getSouthWest().lng],
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]         
     ];
+  });
+
+  map.on('click', function () {
+    if (map.getZoom() >= MEDIUM_ZOOM) {
+      mapMarkers.markers?.forEach((marker: L.Marker) => {
+        marker.openTooltip();
+      });
+    } else {
+      mapMarkers.markers?.forEach((marker: L.Marker) => {
+        marker.closeTooltip();
+      });
+    }
   });
   /* #endregion */
 
@@ -203,13 +225,19 @@ onMounted(() => {
           .marker([lat, lng], {
             icon: getIcon(point),
           })
-          .bindTooltip(point.Org, { direction: 'top', offset: [-12, -41] })
-          // .bindPopup(point.Org)
+          .bindTooltip(point.Org, { direction: 'bottom', offset: [-12, 0] })
           .on('click', function () {
             map.setView([lat, lng]);
             appStore.mapToList.point = point;
-          });
-
+          })
+          .on('mouseout', function (this: L.Marker) {
+            if (map.getZoom() >= MEDIUM_ZOOM) {
+              this.openTooltip();
+            } else {
+              this.closeTooltip();
+            }
+          })
+        result.closeTooltip();
         (<any>result).ID = point.ID;
         return result;
       });
@@ -235,7 +263,8 @@ onMounted(() => {
 
     if (!marker) { return; }
 
-    marker.openTooltip();
+    // TODO: Change the marker?
+    // marker.openTooltip();
     map.setView(marker.getLatLng(), Math.max(map.getZoom(), MEDIUM_ZOOM));
   };
 
