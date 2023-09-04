@@ -187,6 +187,16 @@ onMounted(() => {
       [bounds.getSouthWest().lat, bounds.getSouthWest().lng],
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]         
     ];
+
+    if (map.getZoom() >= MEDIUM_ZOOM) {
+      mapMarkers.markers?.forEach((marker: L.Marker) => {
+        marker.openTooltip();
+      });
+    } else {
+      mapMarkers.markers?.forEach((marker: L.Marker) => {
+        marker.closeTooltip();
+      });
+    }
   });
 
   map.on('click', function () {
@@ -263,16 +273,17 @@ onMounted(() => {
 
     if (!marker) { return; }
 
-    // TODO: Change the marker?
-    marker.openTooltip();
     map.setView(marker.getLatLng(), Math.max(map.getZoom(), MEDIUM_ZOOM));
+    marker.openTooltip();
+
+    // TODO: Change the marker?
   };
 
   watch(appStore.listToMap, (mutation, _state) => {
-    selectMarker(mutation.point);
-
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+    selectMarker(mutation.point);
   });
   /* #endregion */  
 });
