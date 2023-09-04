@@ -169,15 +169,7 @@ onMounted(() => {
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]
     ];
 
-    if (map.getZoom() >= MEDIUM_ZOOM) {
-      mapMarkers.markers?.forEach((marker: L.Marker) => {
-        marker.openTooltip();
-      });
-    } else {
-      mapMarkers.markers?.forEach((marker: L.Marker) => {
-        marker.closeTooltip();
-      });
-    }
+    updateMarkers(appStore.list.filter, map.getZoom() >= MEDIUM_ZOOM);
   });
 
   map.on('moveend', function () {
@@ -187,24 +179,6 @@ onMounted(() => {
       [bounds.getSouthWest().lat, bounds.getSouthWest().lng],
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]         
     ];
-
-    if (map.getZoom() >= MEDIUM_ZOOM) {
-      mapMarkers.markers?.forEach((marker: L.Marker) => {
-        marker.openTooltip();
-      });
-    }
-  });
-
-  map.on('click', function () {
-    if (map.getZoom() >= MEDIUM_ZOOM) {
-      mapMarkers.markers?.forEach((marker: L.Marker) => {
-        marker.openTooltip();
-      });
-    } else {
-      mapMarkers.markers?.forEach((marker: L.Marker) => {
-        marker.closeTooltip();
-      });
-    }
   });
   /* #endregion */
 
@@ -217,7 +191,7 @@ onMounted(() => {
     map: map
   };
 
-  const updateMarkers = (points: any[]) => {
+  const updateMarkers = (points: any[], isPermanentTooltip = false) => {
     if (mapMarkers.layer) {
       map.removeLayer(mapMarkers.layer);
     }
@@ -231,19 +205,12 @@ onMounted(() => {
           .marker([lat, lng], {
             icon: getIcon(point),
           })
-          .bindTooltip(point.Org, { direction: 'bottom', offset: [-12, 0] })
+          .bindTooltip(point.Org, { permanent: isPermanentTooltip, direction: 'bottom', offset: [-12, 0] })
           .on('click', function () {
             map.setView([lat, lng]);
             appStore.mapToList.point = point;
-          })
-          .on('mouseout', function (this: L.Marker) {
-            if (map.getZoom() >= MEDIUM_ZOOM) {
-              this.openTooltip();
-            } else {
-              this.closeTooltip();
-            }
-          })
-        result.closeTooltip();
+          });
+
         (<any>result).ID = point.ID;
         return result;
       });
