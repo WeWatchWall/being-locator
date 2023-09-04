@@ -2,7 +2,7 @@
     <div>
       <v-data-iterator 
         :items="appStore.mapFilter"
-        :page="page"
+        :page="appStore.list1.page"
         items-per-page="10"
       >
         <template v-slot:default="{ items }">
@@ -20,7 +20,7 @@
         <template v-slot:footer>
           <v-pagination
             :length="numPages"
-            v-model="page"
+            v-model="appStore.list1.page"
             @update:modelValue="scrollTop()"
           ></v-pagination>
         </template>
@@ -35,12 +35,11 @@
 import { VDataIterator } from 'vuetify/lib/labs/components.mjs';
 import { useAppStore } from '@/store/app';
 import Point from './Point.vue';
-import { computed, ref } from 'vue';
+import { computed } from 'vue';
 
 const appStore = useAppStore();
-await appStore.initList();  
+await appStore.initList();
 
-let page = ref(1);
 let numPages = computed(() => Math.ceil(appStore.mapFilter.length / 10));
 
 function scrollTop() {

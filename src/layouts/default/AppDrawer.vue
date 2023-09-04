@@ -46,10 +46,19 @@
     <v-btn
       @click.stop="
         // console.log(appStore.drawer.value);
+        // Close the drawer.
         appStore.drawer.visible = false;
-        appStore.filterList();
+
+        // Reset selected point.
         appStore.mapToList.point = null;
+
+        // Reset pagination.
+        appStore.list1.page = 1;
+        
         scrollTop();
+
+        // Filter the list.
+        appStore.filterList();
       "
 
       prepend-icon="mdi-filter"

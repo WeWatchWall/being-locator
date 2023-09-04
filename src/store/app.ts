@@ -96,9 +96,11 @@ export const useAppStore = defineStore('app', {
       filter: [],
       // mapFilter: [],
     },
-    listToMap: {
-      point: 0,
+    list1: {
       page: 1
+    },
+    listToMap: {
+      point: 0
     },
     map: {
       bounds: [
@@ -107,7 +109,7 @@ export const useAppStore = defineStore('app', {
       ],
     },
     mapToList: {
-      point: null
+      point: null,
     },
 
     /* #region Translations */
