@@ -205,7 +205,7 @@ onMounted(() => {
           .marker([lat, lng], {
             icon: getIcon(point),
           })
-          .bindTooltip(point.Org, { permanent: isPermanentTooltip, direction: 'bottom', offset: [-12, 0] })
+          .bindTooltip(point.Org, { permanent: isPermanentTooltip, direction: 'bottom', offset: [-12, -12] })
           .on('click', function () {
             map.setView([lat, lng]);
             appStore.mapToList.point = point;
@@ -223,7 +223,7 @@ onMounted(() => {
   };
 
   watch(appStore.list, (mutation, _state) => {
-    updateMarkers(mutation.filter);
+    updateMarkers(mutation.filter, map.getZoom() >= MEDIUM_ZOOM);
   });
   /* #endregion */
 
