@@ -1,7 +1,12 @@
 <template>
   <Map />
 
-  <div class="text-center">
+  <v-expansion-panels>
+  <v-expansion-panel class="text-center">
+  <v-expansion-panel-title>
+    {{ appStore.translations[appStore.translations.lang].other.legend }}
+  </v-expansion-panel-title>
+  <v-expansion-panel-text>
     <v-chip
       class="ma-2"
       color="red"
@@ -171,7 +176,9 @@
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[12] }}
     </v-chip>
-  </div>
+  </v-expansion-panel-text>
+  </v-expansion-panel>
+  </v-expansion-panels>
 
   <Point
     v-if="appStore.mapToList.point"
