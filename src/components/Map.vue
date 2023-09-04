@@ -12,6 +12,136 @@ import { useAppStore } from '@/store/app';
 const appStore = useAppStore();
 const MEDIUM_ZOOM = 14; 
 
+// This function returns the icon for a point, based on its translated field.
+function getIcon(point: any): L.Icon {
+  if (point.Field === appStore.translations[appStore.translations.lang].field.options[0]) {
+    return L.icon({
+      iconUrl: '/img/icons8-pharmacy-64.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[1]) {
+    return L.icon({
+      iconUrl: '/img/icons8-library-64.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[2]) {
+    return L.icon({
+      iconUrl: '/img/icons8-labor-64.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[3]) {
+    return L.icon({
+      iconUrl: '/img/icons8-environment-48.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[4]) {
+    return L.icon({
+      iconUrl: '/img/icons8-gym-48.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[5]) {
+    return L.icon({
+      iconUrl: '/img/icons8-youth-40.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[6]) {
+    return L.icon({
+      iconUrl: '/img/icons8-recycle-48.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[7]) {
+    return L.icon({
+      iconUrl: '/img/icons8-prayer-48.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[8]) {
+    return L.icon({
+      iconUrl: '/img/icons8-social-48.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[9]) {
+    return L.icon({
+      iconUrl: '/img/icons8-political-64.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[10]) {
+    return L.icon({
+      iconUrl: '/img/icons8-family-40.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[11]) {
+    return L.icon({
+      iconUrl: '/img/icons8-art-48.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[12]) {
+    return L.icon({
+      iconUrl: '/img/icons8-other-48.png',
+      iconSize: [41, 41],
+      iconAnchor: [30, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [15, 41]
+    });
+  } else {
+    return L.icon({
+      iconUrl: '/css/images/marker-icon.png',
+      iconSize: [25, 41],
+      iconAnchor: [25, 41],
+      shadowUrl: '/css/images/marker-shadow.png',
+      shadowSize: [41, 41],
+      shadowAnchor: [25, 41]
+    });
+  }
+}
 
 onMounted(() => {
   /* #region Map initialization. */
@@ -70,8 +200,11 @@ onMounted(() => {
         const lng = point.Longitude;
 
         const result = L
-          .marker([lat, lng])
-          .bindPopup(point.Org)
+          .marker([lat, lng], {
+            icon: getIcon(point),
+          })
+          .bindTooltip(point.Org, { direction: 'top', offset: [-12, -41] })
+          // .bindPopup(point.Org)
           .on('click', function () {
             map.setView([lat, lng]);
             appStore.mapToList.point = point;
@@ -102,7 +235,7 @@ onMounted(() => {
 
     if (!marker) { return; }
 
-    marker.openPopup();
+    marker.openTooltip();
     map.setView(marker.getLatLng(), Math.max(map.getZoom(), MEDIUM_ZOOM));
   };
 
