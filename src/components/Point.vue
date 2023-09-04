@@ -17,16 +17,15 @@
       </v-card-title>
         
       <v-card-text>
-        {{ point.Expertise }}<br><br>
+        <div v-if="point.Expertise">{{ point.Expertise }}<br><br></div>
 
         {{ (<any>appStore.translations.current).other.field }}: {{ point.Field }}<br>
-          {{ (<any>appStore.translations.current).other.category }}: {{ point.Category }}<br><br>
+        {{ (<any>appStore.translations.current).other.category }}: {{ point.Category }}<br><br>
 
-        
         <address class="mx-4">
-          {{ (<any>appStore.translations.current).other.site }}: <a :href="point.Site" target="_blank"> {{ point.Site }}</a><br>
-          {{ (<any>appStore.translations.current).other.tel }}: <a :href="createTel" target="_blank">{{ point.Telephone }}</a><br>
-          {{ (<any>appStore.translations.current).other.address }}: <a :href="createAddress" target="_blank">{{ point.Address }}</a>
+          <div v-if="point.Site">{{ (<any>appStore.translations.current).other.site }}: <a :href="point.Site" target="_blank"> {{ point.Site }}</a><br></div>
+          <div v-if="point.Telephone">{{ (<any>appStore.translations.current).other.tel }}: <a :href="createTel" target="_blank">{{ point.Telephone }}</a><br></div>
+          <div v-if="point.Address">{{ (<any>appStore.translations.current).other.address }}: <a :href="createAddress" target="_blank">{{ point.Address }}</a></div>
         </address>
       </v-card-text>
 
