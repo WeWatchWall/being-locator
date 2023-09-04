@@ -18,7 +18,11 @@
         </template>
 
         <template v-slot:footer>
-          <v-pagination :length="numPages" v-model="page"></v-pagination>
+          <v-pagination
+            :length="numPages"
+            v-model="page"
+            @update:modelValue="scrollTop()"
+          ></v-pagination>
         </template>
       </v-data-iterator>
       <br>
@@ -38,4 +42,11 @@ await appStore.initList();
 
 let page = ref(1);
 let numPages = computed(() => Math.ceil(appStore.mapFilter.length / 10));
+
+function scrollTop() {
+  window.scrollTo({
+    top: 400,
+    behavior: 'instant',
+  });
+}
 </script>

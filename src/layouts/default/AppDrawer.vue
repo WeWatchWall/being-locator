@@ -49,6 +49,7 @@
         appStore.drawer.visible = false;
         appStore.filterList();
         appStore.mapToList.point = null;
+        scrollTop();
       "
 
       prepend-icon="mdi-filter"
@@ -67,4 +68,12 @@
 //
 import { useAppStore } from '@/store/app';
 const appStore = useAppStore();
+
+
+function scrollTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  });
+}
 </script>
