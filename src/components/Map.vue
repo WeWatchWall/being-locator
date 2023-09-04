@@ -192,10 +192,6 @@ onMounted(() => {
       mapMarkers.markers?.forEach((marker: L.Marker) => {
         marker.openTooltip();
       });
-    } else {
-      mapMarkers.markers?.forEach((marker: L.Marker) => {
-        marker.closeTooltip();
-      });
     }
   });
 
