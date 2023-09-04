@@ -5,6 +5,7 @@
       <template v-slot:append v-if="isSelected">
         <v-btn
           icon="mdi-close"
+          color="pink"
           @click.stop="
             appStore.listToMap.point = 0;
             appStore.mapToList.point = null;
