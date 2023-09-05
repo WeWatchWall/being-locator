@@ -6,7 +6,7 @@
 <script lang="ts" setup>
 import L from 'leaflet';
 import "leaflet.markercluster";
-import { computed, onMounted, ref, watch } from 'vue';
+import { onMounted, ref, watch } from 'vue';
 import { useAppStore } from '@/store/app';
 
 const appStore = useAppStore();
