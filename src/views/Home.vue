@@ -15,7 +15,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/health/black.png"
+          src="../../public/img/health/red.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[0] }}
@@ -28,7 +28,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/education/black.png"
+          src="../../public/img/education/purple.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[1] }}
@@ -41,7 +41,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/employment/black.png"
+          src="../../public/img/employment/orange.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[2] }}
@@ -54,7 +54,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/environment/black.png"
+          src="../../public/img/environment/green.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[3] }}
@@ -67,7 +67,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/sports/black.png"
+          src="../../public/img/sports/blue.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[4] }}
@@ -80,7 +80,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/youth/black.png"
+          src="../../public/img/youth/purple.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[5] }}
@@ -93,7 +93,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/sustainability/black.png"
+          src="../../public/img/sustainability/green.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[6] }}
@@ -106,7 +106,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/religion/black.png"
+          src="../../public/img/religion/orange.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[7] }}
@@ -119,7 +119,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/social/black.png"
+          src="../../public/img/social/pink.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[8] }}
@@ -132,7 +132,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/political/black.png"
+          src="../../public/img/political/blue.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[9] }}
@@ -145,7 +145,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/family/black.png"
+          src="../../public/img/family/purple.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[10] }}
@@ -158,7 +158,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/art/black.png"
+          src="../../public/img/art/pink.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[11] }}
@@ -171,7 +171,7 @@
         size="36px"
       >
         <v-img
-          src="../../public/img/other/black.png"
+          src="../../public/img/other/blue.png"
         ></v-img>
       </v-avatar>
       {{ appStore.translations[appStore.translations.lang].field.options[12] }}
