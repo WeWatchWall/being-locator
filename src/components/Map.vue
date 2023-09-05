@@ -216,7 +216,10 @@ onMounted(() => {
       });
 
     mapMarkers.layer = window.L.markerClusterGroup({
-      maxClusterRadius: 30
+      spiderfyDistanceMultiplier: 2,
+      maxClusterRadius: (zoomLevel: number) => {
+        return (zoomLevel < MEDIUM_ZOOM) ? 30 : 10;
+      }
     });
     mapMarkers.layer.addLayers(mapMarkers.markers);
     map.addLayer(mapMarkers.layer);
