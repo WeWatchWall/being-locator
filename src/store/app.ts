@@ -200,8 +200,7 @@ export const useAppStore = defineStore('app', {
           address: 'Adresă',
           map: 'Hartă'
         }
-      },
-      current: {}
+      }
     }
     /* #endregion */
   }),
@@ -233,15 +232,10 @@ export const useAppStore = defineStore('app', {
         return true;
       });
     },
-    initTranslations() {
-      this.translations.current =
-        this.translations[this.translations.lang];
-    },
     switchLang() {
       // Set the UI language.
       this.translations.lang =
         this.translations.lang === Langs.RO ? Langs.EN : Langs.RO;
-      this.initTranslations();
 
       // Get the translated data.
       this.initList();

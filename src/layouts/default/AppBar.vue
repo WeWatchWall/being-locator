@@ -11,7 +11,7 @@
       max-width="200"
       contain
     ></v-img>
-    <v-app-bar-title>{{ (<any>appStore.translations.current).other.title }}</v-app-bar-title>
+    <v-app-bar-title>{{ appStore.translations[appStore.translations.lang].other.title }}</v-app-bar-title>
 
     <v-spacer></v-spacer>
     <v-btn
@@ -26,6 +26,4 @@
 //
 import { useAppStore } from '@/store/app';
 const appStore = useAppStore();
-
-appStore.initTranslations();
 </script>

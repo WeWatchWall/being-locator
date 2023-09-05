@@ -20,13 +20,13 @@
       <v-card-text>
         <div v-if="point.Expertise">{{ point.Expertise }}<br><br></div>
 
-        {{ (<any>appStore.translations.current).other.field }}: {{ point.Field }}<br>
-        {{ (<any>appStore.translations.current).other.category }}: {{ point.Category }}<br><br>
+        {{ appStore.translations[appStore.translations.lang].other.field }}: {{ point.Field }}<br>
+        {{ appStore.translations[appStore.translations.lang].other.category }}: {{ point.Category }}<br><br>
 
         <address class="mx-4">
-          <div v-if="point.Site">{{ (<any>appStore.translations.current).other.site }}: <a :href="point.Site" target="_blank"> {{ point.Site }}</a><br></div>
-          <div v-if="point.Telephone">{{ (<any>appStore.translations.current).other.tel }}: <a :href="createTel" target="_blank">{{ point.Telephone }}</a><br></div>
-          <div v-if="point.Address">{{ (<any>appStore.translations.current).other.address }}: <a :href="createAddress" target="_blank">{{ point.Address }}</a></div>
+          <div v-if="point.Site">{{ appStore.translations[appStore.translations.lang].other.site }}: <a :href="point.Site" target="_blank"> {{ point.Site }}</a><br></div>
+          <div v-if="point.Telephone">{{ appStore.translations[appStore.translations.lang].other.tel }}: <a :href="createTel" target="_blank">{{ point.Telephone }}</a><br></div>
+          <div v-if="point.Address">{{ appStore.translations[appStore.translations.lang].other.address }}: <a :href="createAddress" target="_blank">{{ point.Address }}</a></div>
         </address>
       </v-card-text>
 
@@ -44,7 +44,7 @@
           <template v-slot:prepend>
             <v-icon color="secondary"></v-icon>
           </template>
-          {{ (<any>appStore.translations.current).other.map }}
+          {{ appStore.translations[appStore.translations.lang].other.map }}
         </v-btn>
       </v-card-actions>
     </v-card>

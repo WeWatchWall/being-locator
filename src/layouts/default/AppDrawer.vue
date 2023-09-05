@@ -5,40 +5,40 @@
   >
     <v-select
       clearable
-      :label="(<any>appStore.translations.current).field.name"
-      :items="(<any>appStore.translations.current).field.options"
+      :label="appStore.translations[appStore.translations.lang].field.name"
+      :items="appStore.translations[appStore.translations.lang].field.options"
       v-model="appStore.drawer.value[0]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      :label="(<any>appStore.translations.current).category.name"
-      :items="(<any>appStore.translations.current).category.options"
+      :label="appStore.translations[appStore.translations.lang].category.name"
+      :items="appStore.translations[appStore.translations.lang].category.options"
       v-model="appStore.drawer.value[1]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      :label="(<any>appStore.translations.current).influence.name"
-      :items="(<any>appStore.translations.current).influence.options"
+      :label="appStore.translations[appStore.translations.lang].influence.name"
+      :items="appStore.translations[appStore.translations.lang].influence.options"
       v-model="appStore.drawer.value[2]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      :label="(<any>appStore.translations.current).activity.name"
-      :items="(<any>appStore.translations.current).activity.options"
+      :label="appStore.translations[appStore.translations.lang].activity.name"
+      :items="appStore.translations[appStore.translations.lang].activity.options"
       v-model="appStore.drawer.value[3]"
       class="my-2 mx-2"
     ></v-select>
 
     <v-select
       clearable
-      :label="(<any>appStore.translations.current).youth.name"
-      :items="(<any>appStore.translations.current).youth.options"
+      :label="appStore.translations[appStore.translations.lang].youth.name"
+      :items="appStore.translations[appStore.translations.lang].youth.options"
       v-model="appStore.drawer.value[4]"
       class="my-2 mx-2"
     ></v-select>
@@ -68,7 +68,7 @@
         <v-icon color="primary"></v-icon>
       </template>
 
-      {{ (<any>appStore.translations.current).other.filter }}
+      {{ appStore.translations[appStore.translations.lang].other.filter }}
     </v-btn>
   </v-navigation-drawer>
 </template>
