@@ -34,6 +34,9 @@
       <v-card-actions>
         <v-btn
           @click.stop="
+            appStore.listToMap.point = 0;
+            appStore.mapToList.point = null;
+
             appStore.listToMap.point = point.ID;
             appStore.mapToList.point = point;
 

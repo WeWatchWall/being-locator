@@ -6,12 +6,11 @@
 <script lang="ts" setup>
 import L from 'leaflet';
 import "leaflet.markercluster";
-import { onMounted, watch } from 'vue';
+import { computed, onMounted, ref, watch } from 'vue';
 import { useAppStore } from '@/store/app';
 
 const appStore = useAppStore();
 const MEDIUM_ZOOM = 14; 
-
 
 function getIconName(point: any): string {
   if (point.Field === appStore.translations[appStore.translations.lang].field.options[0]) {
@@ -100,6 +99,7 @@ onMounted(() => {
   /* #endregion */
 
   /* #region Map events. */
+  let currentIsMediumZoom = ref(map.getZoom() > MEDIUM_ZOOM);
   map.on('zoomend', function () {
     // console.log(map.getZoom());
     const bounds = map.getBounds();
@@ -108,7 +108,10 @@ onMounted(() => {
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]
     ];
 
-    updateMarkers(appStore.list.filter, map.getZoom() >= MEDIUM_ZOOM);
+    currentIsMediumZoom.value = map.getZoom() > MEDIUM_ZOOM;
+  });
+  watch(currentIsMediumZoom, (mutation, _state) => {
+    updateMarkers(appStore.list.filter, mutation);
   });
 
   map.on('moveend', function () {
