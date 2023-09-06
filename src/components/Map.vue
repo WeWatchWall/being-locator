@@ -181,7 +181,11 @@ onMounted(() => {
 
     if (!marker) { return; }
 
-    map.setView(marker.getLatLng(), Math.max(map.getZoom(), MEDIUM_ZOOM));
+    map.setView(
+      marker.getLatLng(),
+      Math.max(map.getZoom(), MEDIUM_ZOOM),
+      { animate: false }
+    );
     marker.openTooltip();
 
     // TODO: Change the marker?
