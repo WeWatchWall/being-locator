@@ -160,7 +160,7 @@ onMounted(() => {
     mapMarkers.layer = window.L.markerClusterGroup({
       spiderfyDistanceMultiplier: 2,
       maxClusterRadius: (zoomLevel: number) => {
-        return (zoomLevel < MEDIUM_ZOOM) ? 30 : 10;
+        return (zoomLevel < MEDIUM_ZOOM - 1) ? 30 : 10;
       }
     });
     mapMarkers.layer.addLayers(mapMarkers.markers);
@@ -168,7 +168,7 @@ onMounted(() => {
   };
 
   watch(appStore.list, (mutation, _state) => {
-    updateMarkers(mutation.filter, map.getZoom() >= MEDIUM_ZOOM);
+    updateMarkers(mutation.filter, map.getZoom() > MEDIUM_ZOOM);
   });
   /* #endregion */
 
