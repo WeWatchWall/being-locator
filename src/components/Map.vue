@@ -60,9 +60,9 @@ function getIconColor(point: any): string {
   } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[7]) {
     return 'lime';
   } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[8]) {
-    return 'dgray';
+    return 'dgrey';
   } else {
-    return 'gray';
+    return 'grey';
   }
 }
 

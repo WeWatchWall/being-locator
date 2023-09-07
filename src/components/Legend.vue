@@ -39,7 +39,7 @@
             size="36px"
           >
             <v-img
-              src="../../public/img/employment/gray.png"
+              src="../../public/img/employment/grey.png"
             ></v-img>
           </v-avatar>
           {{ appStore.translations[appStore.translations.lang].field.options[2] }}
