@@ -148,7 +148,8 @@ export const useAppStore = defineStore('app', {
         },
         other: {
           title: 'Locator',
-          legend: 'Legend',
+          legendFields: 'Legend for Fields',
+          legendCategories: 'Legend for Categories',
           filter: 'Filter',
           field: 'Field',
           category: 'Category',
@@ -191,7 +192,8 @@ export const useAppStore = defineStore('app', {
         },
         other: {
           title: 'Hartă',
-          legend: 'Legendă',
+          legendFields: 'Legendă Domenii',
+          legendCategories: 'Legendă Categorii',
           filter: 'Filtrează',
           field: 'Domeniu',
           category: 'Categorie',
