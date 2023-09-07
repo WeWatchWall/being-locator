@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class="h-50 w-auto" style="max-height: 35em;">
+  <div id="map" class="w-auto" style="height: 400px;">
   </div>
 </template>
 
