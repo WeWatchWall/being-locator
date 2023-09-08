@@ -21,16 +21,7 @@ export default defineConfig({
         configFile: 'src/styles/settings.scss',
       },
     }),
-    VitePWA({
-      registerType: 'autoUpdate',
-      includeAssets: ["favicon.ico"],
-      manifest: {
-        name: "Name App",
-        short_name: "Short Name",
-        description: "Description",
-        theme_color: "#ffffff",
-      }
-    })
+    VitePWA({ registerType: 'autoUpdate' })
   ],
   define: { 'process.env': {} },
   resolve: {
