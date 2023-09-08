@@ -15,12 +15,9 @@
 
         <template v-slot:append>
           <v-btn
-            icon="mdi-close"
-            color="pink"
-            @click.stop="
-              appStore.listToMap.point = 0;
-              appStore.mapToList.point = null;
-            "
+            :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
+            @click="show = !show"
+            variant="text"
           ></v-btn>
         </template>
 
@@ -33,7 +30,8 @@
         </v-card-subtitle>
       </v-card-item>
 
-      <v-card-text>
+      <v-card-text v-show="show">
+        <v-divider></v-divider>
         <div v-if="point.Expertise">{{ point.Expertise }}<br><br></div>
 
         <address class="mx-4">
@@ -44,7 +42,7 @@
       </v-card-text>
 
 
-      <v-card-actions>
+      <v-card-actions v-show="show">
         <v-btn
           @click.stop="
             appStore.listToMap.point = 0;
@@ -69,10 +67,16 @@
 <script lang="ts" setup>
 import { useAppStore } from '@/store/app';
 import { IconPath } from './IconPath';
-import { computed } from 'vue';
+import { computed, ref, watch } from 'vue';
+import { onUpdated } from 'vue';
 
-const props = defineProps(['point']);
+const props = defineProps(['point', 'isSelected']);
 const appStore = useAppStore();
+
+let show = ref(false);
+onUpdated(() => {
+  show.value = false;
+});
 
 const createID = computed(() => 'point-' + props.point.ID);
 const createTel = computed(() =>'tel:' + props.point.Telephone);
