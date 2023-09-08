@@ -31,7 +31,7 @@
         color="red"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/health/red.png"
@@ -44,7 +44,7 @@
         color="purple"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/education/purple.png"
@@ -57,7 +57,7 @@
         color="orange"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/employment/orange.png"
@@ -70,7 +70,7 @@
         color="green"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/environment/green.png"
@@ -83,7 +83,7 @@
         color="blue"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/sports/blue.png"
@@ -96,7 +96,7 @@
         color="purple"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/youth/purple.png"
@@ -109,7 +109,7 @@
         color="green"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/sustainability/green.png"
@@ -122,7 +122,7 @@
         color="orange"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/religion/orange.png"
@@ -135,7 +135,7 @@
         color="pink"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/social/pink.png"
@@ -148,7 +148,7 @@
         color="blue"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/political/blue.png"
@@ -161,7 +161,7 @@
         color="purple"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/family/purple.png"
@@ -174,7 +174,7 @@
         color="pink"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/art/pink.png"
@@ -187,7 +187,7 @@
         color="blue"
       >
         <v-avatar
-          size="30px"
+          size="36px"
         >
           <v-img
             src="../../public/img/other/blue.png"
