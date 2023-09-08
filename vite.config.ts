@@ -1,4 +1,5 @@
 // Plugins
+import { VitePWA } from 'vite-plugin-pwa'
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 
@@ -20,6 +21,7 @@ export default defineConfig({
         configFile: 'src/styles/settings.scss',
       },
     }),
+    VitePWA({ registerType: 'autoUpdate' })
   ],
   define: { 'process.env': {} },
   resolve: {
