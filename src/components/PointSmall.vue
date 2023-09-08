@@ -2,7 +2,7 @@
    <v-card
       :id="createID"
     >
-      <v-card-item>
+      <v-card-item @click="show = !show">
         <template v-slot:prepend>
           <v-avatar
           size="48px"
@@ -16,7 +16,6 @@
         <template v-slot:append>
           <v-btn
             :icon="show ? 'mdi-chevron-up' : 'mdi-chevron-down'"
-            @click="show = !show"
             variant="text"
           ></v-btn>
         </template>
