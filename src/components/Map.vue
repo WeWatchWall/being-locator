@@ -8,71 +8,16 @@ import L from 'leaflet';
 import "leaflet.markercluster";
 import { onMounted, ref, watch } from 'vue';
 import { useAppStore } from '@/store/app';
+import { IconPath } from './IconPath';
 
 const appStore = useAppStore();
 const MEDIUM_ZOOM = 14; 
 
-function getIconName(point: any): string {
-  if (point.Field === appStore.translations[appStore.translations.lang].field.options[0]) {
-    return 'health';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[1]) {
-    return 'education';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[2]) {
-    return 'employment';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[3]) {
-    return 'environment';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[4]) {
-    return 'sports';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[5]) {
-    return 'youth';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[6]) {
-    return 'sustainability';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[7]) {
-    return 'religion';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[8]) {
-    return 'social';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[9]) {
-    return 'political';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[10]) {
-    return 'family';
-  } else if (point.Field === appStore.translations[appStore.translations.lang].field.options[11]) {
-    return 'art';
-  } else {
-    return 'other';
-  }
-}
-
-function getIconColor(point: any): string {
-  if (point.Category === appStore.translations[appStore.translations.lang].category.options[0]) {
-    return 'red';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[1]) {
-    return 'green';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[2]) {
-    return 'black';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[3]) {
-    return 'blue';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[4]) {
-    return 'purple';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[5]) {
-    return 'orange';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[6]) {
-    return 'pink';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[7]) {
-    return 'lime';
-  } else if (point.Category === appStore.translations[appStore.translations.lang].category.options[8]) {
-    return 'dgrey';
-  } else {
-    return 'grey';
-  }
-}
 
 // This function returns the icon for a point, based on its translated field.
 function getIcon(point: any): L.Icon {
-  const iconName = getIconName(point);
-  const iconColor = getIconColor(point);
-
   return L.icon({
-    iconUrl: `./img/${iconName}/${iconColor}.png`,
+    iconUrl: IconPath.getIcon(point),
     iconSize: [41, 41],
     iconAnchor: [30, 41],
     shadowUrl: './css/images/marker-shadow.png',

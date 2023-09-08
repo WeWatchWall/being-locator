@@ -12,7 +12,7 @@
           >
             <Point
               :point="item.raw"
-              class="w-75 my-2 mx-auto"
+              class="w-90 my-2 mx-auto"
             ></Point>
           </template>
         </template>
