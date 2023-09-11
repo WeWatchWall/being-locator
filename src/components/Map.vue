@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class="w-auto" :style="getHeightStyle()">
+  <div id="map" class="w-auto" :style="heightStyle">
   </div>
 </template>
 
@@ -12,10 +12,7 @@ import { IconPath } from './IconPath';
 import { Environment } from '@/env';
 
 const appStore = useAppStore();
-
-function getHeightStyle() {
-  return `height: ${Environment.mapHeightPx}px;}`;
-}
+const heightStyle = `height: ${Environment.mapHeightPx}px;}`;
 
 // This function returns the icon for a point, based on its translated field.
 function getIcon(point: any): L.Icon {

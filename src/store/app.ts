@@ -65,6 +65,7 @@ function getJoinData(DB: any) {
       Locations.ID as ID,
       Locations.Name as Name,
       Locations.IsNetwork as IsNetwork,
+
       Stakeholders.Organization as Org,
       Stakeholders.Expertise as Expertise,
       Stakeholders.Field as Field,
