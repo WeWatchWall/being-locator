@@ -25,7 +25,7 @@
         </template>
 
         <v-card-title class="text-wrap">
-          {{ point.Org }}
+          {{ point.Name }}
         </v-card-title>
 
         <v-card-subtitle class="text-wrap">
@@ -34,6 +34,7 @@
       </v-card-item>
 
       <v-card-text>
+        <div v-if="point.IsNetwork">{{ appStore.translations[appStore.translations.lang].other.network }}: {{ point.Org }}<br><br></div>
         <div v-if="point.Expertise">{{ point.Expertise }}<br><br></div>
 
         <address class="mx-4">

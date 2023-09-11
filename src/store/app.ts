@@ -47,13 +47,13 @@ async function getData(lang = Langs.EN) {
 
   DB.exec(`
     CREATE TABLE IF NOT EXISTS Locations(
-      ID TEXT, OrgID TEXT, Organization TEXT, Telephone TEXT,
-      Address TEXT, Latitude DOUBLE, Longitude DOUBLE);
+      ID TEXT, OrgID TEXT, Name TEXT, IsNetwork TEXT, Organization TEXT,
+      Telephone TEXT, Address TEXT, Latitude DOUBLE, Longitude DOUBLE);
   `);
 
   DB.tables.Stakeholders.data =
     parseCSV(await fetchFile(`Stakeholders${lang}`));
-  DB.tables.Locations.data = parseCSV(await fetchFile('Locations'));
+  DB.tables.Locations.data = parseCSV(await fetchFile(`Locations${lang}`));
 
   return getJoinData(DB);
 }
@@ -62,6 +62,8 @@ function getJoinData(DB: any) {
   return DB.exec(`
     SELECT 
       Locations.ID as ID,
+      Locations.Name as Name,
+      Locations.IsNetwork as IsNetwork,
       Stakeholders.Organization as Org,
       Stakeholders.Expertise as Expertise,
       Stakeholders.Field as Field,
@@ -151,6 +153,7 @@ export const useAppStore = defineStore('app', {
           legendFields: 'Legend for Fields',
           legendCategories: 'Legend for Categories',
           filter: 'Filter',
+          network: 'Network',
           field: 'Field',
           category: 'Category',
           site: 'Site',
@@ -195,6 +198,7 @@ export const useAppStore = defineStore('app', {
           legendFields: 'Legendă Domenii',
           legendCategories: 'Legendă Categorii',
           filter: 'Filtrează',
+          network: 'Rețea',
           field: 'Domeniu',
           category: 'Categorie',
           site: 'Pagina',
