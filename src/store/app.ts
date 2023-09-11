@@ -3,6 +3,7 @@ import alasql from 'alasql';
 import papa from 'papaparse';
 import { defineStore } from 'pinia'
 import { Langs } from './langs';
+import { Environment } from '@/env';
 
 /* #region Initialization functions. */
 async function fetchFile(fileName: string): Promise<string | undefined> {
@@ -106,8 +107,8 @@ export const useAppStore = defineStore('app', {
     },
     map: {
       bounds: [
-        [42.15731506855392, 19.819335937500004],
-        [49.34840531310837, 30.432128906250004]
+        Environment.mapBoundSouthWest,
+        Environment.mapBoundNorthEast
       ],
     },
     mapToList: {

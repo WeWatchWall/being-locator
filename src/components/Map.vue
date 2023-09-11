@@ -1,5 +1,5 @@
 <template>
-  <div id="map" class="w-auto" style="height: 400px;">
+  <div id="map" class="w-auto" :style="getHeightStyle()">
   </div>
 </template>
 
@@ -9,10 +9,13 @@ import "leaflet.markercluster";
 import { onMounted, ref, watch } from 'vue';
 import { useAppStore } from '@/store/app';
 import { IconPath } from './IconPath';
+import { Environment } from '@/env';
 
 const appStore = useAppStore();
-const MEDIUM_ZOOM = 14; 
 
+function getHeightStyle() {
+  return `height: ${Environment.mapHeightPx}px;}`;
+}
 
 // This function returns the icon for a point, based on its translated field.
 function getIcon(point: any): L.Icon {
@@ -30,21 +33,24 @@ onMounted(() => {
   /* #region Map initialization. */
   var map = L
     .map('map')
-    .setView([45.916908312944116, 25.015869140625004], 6)
+    // @ts-ignore
+    .setView(Environment.mapCenter, Environment.minZoom)
     .setMaxBounds([
-      [42.15731506855392, 19.819335937500004],
-      [49.34840531310837, 30.432128906250004]
+      // @ts-ignore
+      Environment.mapBoundSouthWest,
+      // @ts-ignore
+      Environment.mapBoundNorthEast
     ]);
 
   L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    minZoom: 6,
-    maxZoom: 19,
+    minZoom: Environment.minZoom,
+    maxZoom: Environment.maxZoom,
     attribution: '© OpenStreetMap'
   }).addTo(map);
   /* #endregion */
 
   /* #region Map events. */
-  let currentIsMediumZoom = ref(map.getZoom() > MEDIUM_ZOOM);
+  let currentIsMediumZoom = ref(map.getZoom() > Environment.mediumZoom);
   map.on('zoomend', function () {
     // console.log(map.getZoom());
     const bounds = map.getBounds();
@@ -53,7 +59,7 @@ onMounted(() => {
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]
     ];
 
-    currentIsMediumZoom.value = map.getZoom() > MEDIUM_ZOOM;
+    currentIsMediumZoom.value = map.getZoom() > Environment.mediumZoom;
   });
   watch(currentIsMediumZoom, (mutation, _state) => {
     updateMarkers(appStore.list.filter, mutation);
@@ -105,7 +111,7 @@ onMounted(() => {
     mapMarkers.layer = window.L.markerClusterGroup({
       spiderfyDistanceMultiplier: 2,
       maxClusterRadius: (zoomLevel: number) => {
-        return (zoomLevel < MEDIUM_ZOOM - 1) ? 30 : 10;
+        return (zoomLevel < Environment.mediumZoom - 1) ? 30 : 10;
       }
     });
     mapMarkers.layer.addLayers(mapMarkers.markers);
@@ -113,7 +119,7 @@ onMounted(() => {
   };
 
   watch(appStore.list, (mutation, _state) => {
-    updateMarkers(mutation.filter, map.getZoom() > MEDIUM_ZOOM);
+    updateMarkers(mutation.filter, map.getZoom() > Environment.mediumZoom);
   });
   /* #endregion */
 
@@ -128,7 +134,7 @@ onMounted(() => {
 
     map.setView(
       marker.getLatLng(),
-      Math.max(map.getZoom(), MEDIUM_ZOOM),
+      Math.max(map.getZoom(), Environment.mediumZoom),
       { animate: false }
     );
     marker.openTooltip();
