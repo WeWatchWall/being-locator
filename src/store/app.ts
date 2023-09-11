@@ -93,7 +93,7 @@ export const useAppStore = defineStore('app', {
     drawer: {
       visible: false,
       // Field, Category, Influence, Activity, Youth
-      value: [null, null, null, null, null]
+      value: [[], [], [], [], []]
     },
     list: {
       points: [],
@@ -228,14 +228,15 @@ export const useAppStore = defineStore('app', {
       this.list.filter = this.list.points;
     },
     filterList() {
+      debugger;
       const { value } = this.drawer;
 
       this.list.filter = this.list.points.filter((point: any) => {
-        if (value[0] && point.Field !== value[0]) { return false; }
-        if (value[1] && point.Category !== value[1]) { return false; }
-        if (value[2] && point.Influence !== value[2]) { return false; }
-        if (value[3] && point.Activity !== value[3]) { return false; }
-        if (value[4] && point.Youth !== value[4]) { return false; }
+        if (value[0].length && !(<any[]>value[0]).includes(point.Field)) { return false; }
+        if (value[1].length && !(<any[]>value[1]).includes(point.Category)) { return false; }
+        if (value[2].length && !(<any[]>value[2]).includes(point.Influence)) { return false; }
+        if (value[3].length && !(<any[]>value[3]).includes(point.Activity)) { return false; }
+        if (value[4].length && !(<any[]>value[4]).includes(point.Youth)) { return false; }
 
         return true;
       });
@@ -249,7 +250,7 @@ export const useAppStore = defineStore('app', {
       this.initList();
 
       // Reset the drawer.
-      this.drawer.value = [null, null, null, null, null];
+      this.drawer.value = [[], [], [], [], []];
 
       // Reset the current point.
       this.mapToList.point = null;
