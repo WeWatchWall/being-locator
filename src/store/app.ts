@@ -251,6 +251,9 @@ export const useAppStore = defineStore('app', {
 
       // Reset the current point.
       this.mapToList.point = null;
+
+      // Reset the page.
+      this.list1.page = 1;
     }
   }
 })
