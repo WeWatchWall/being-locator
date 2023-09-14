@@ -41,7 +41,7 @@ async function getData(lang = Langs.EN) {
 
   DB.exec(`
     CREATE TABLE IF NOT EXISTS Stakeholders(
-      ID TEXT, Organization TEXT, Influence TEXT, Activity TEXT,
+      ID TEXT, Organization TEXT, Interest TEXT, Influence TEXT, Activity TEXT,
       Expertise TEXT, Youth TEXT, Field TEXT, Category TEXT,
       Level TEXT, Site TEXT);
   `);
@@ -70,6 +70,7 @@ function getJoinData(DB: any) {
       Stakeholders.Expertise as Expertise,
       Stakeholders.Field as Field,
       Stakeholders.Category as Category,
+      Stakeholders.Interest as Interest,
       Stakeholders.Influence as Influence,
       Stakeholders.Activity as Activity,
       Stakeholders.Youth as Youth,
@@ -93,7 +94,7 @@ export const useAppStore = defineStore('app', {
     drawer: {
       visible: false,
       // Field, Category, Influence, Activity, Youth
-      value: [[], [], [], [], []]
+      value: [[], [], [], [], [], []]
     },
     list: {
       points: [],
@@ -125,30 +126,34 @@ export const useAppStore = defineStore('app', {
           options: [
             'Health', 'Education', 'Employment',
             'Environment', 'Sports', 'Youth',
-            'Sustainability', 'Religion', 'Social',
-            'Political', 'Family', 'Art', 'Other'
+            'Innovation', 'Religion', 'Social', 
+            'Political', 'Parenting', 'Art', 'Other'
           ]
         },
         category: {
           name: 'Category',
           options: [
-            'Governmental', 'Research & Academia', 'Private',
-            'Non-governmental organisations', 'Education',
-            'Self-organised communities', 'Philantropies',
-            'Parents & family communities', 'Media', 'Other'
+            'Public', 'Research & academia', 'Private',
+            'Non-governmental', 'Education',
+            'Self-organised', 'Philantropic',
+            'Parents', 'Support group', 'Media', 'International', 'Other'
           ]
+        },
+        interest: {
+          name: 'Interest',
+          options: ['Low', 'High']
         },
         influence: {
           name: 'Influence',
-          options: ['Low', 'Medium', 'High']
+          options: ['Low', 'High']
         },
         activity: {
           name: 'Activity',
-          options: ['Low', 'Medium', 'High']
+          options: ['Low', 'High']
         },
         youth: {
           name: 'Youth',
-          options: ['Youth', 'Youth and Adults']
+          options: ['Youth-led', 'Youth-focused', 'Indirect impact']
         },
         other: {
           title: 'Locator',
@@ -170,30 +175,34 @@ export const useAppStore = defineStore('app', {
           options: [
             'Sănătate', 'Educație', 'Muncă',
             'Mediu', 'Sport', 'Tineri',
-            'Sustainabilitate', 'Religie', 'Social',
-            'Politic', 'Familie', 'Artă', 'Altul'
+            'Inovare', 'Religie', 'Social',
+            'Politic', 'Părinți', 'Artă', 'Altul'
           ]
         },
         category: {
           name: 'Categorie',
           options: [
-            'Guvernamentală', 'Cercetare și Academică', 'Private',
-            'Organizații Non-Guvernamentale', 'Educație',
-            'Comunități Organizate', 'Filantropii',
-            'Comunități Părinți și Familii', 'Media', 'Alta'
+            'Publică', 'Cercetare & academică', 'Privată',
+            'Non-guvernamentală', 'Educație',
+            'Auto-organizată', 'Filantropică',
+            'Părinți', 'Grup suport', 'Media', 'Internațională', 'Alta'
           ]
+        },
+        interest: {
+          name: 'Interes',
+          options: ['Mic', 'Mare']
         },
         influence: {
           name: 'Influență',
-          options: ['Mică', 'Medie', 'Mare']
+          options: ['Mică', 'Mare']
         },
         activity: {
           name: 'Activitate',
-          options: ['Mică', 'Medie', 'Mare']
+          options: ['Mică', 'Mare']
         },
         youth: {
           name: 'Tineri',
-          options: ['Tineri', 'Tineri și Adulți']
+          options: ['Lideri tineri', 'Pentru tineri', 'Impact indirect']
         },
         other: {
           title: 'Hartă',
@@ -228,15 +237,15 @@ export const useAppStore = defineStore('app', {
       this.list.filter = this.list.points;
     },
     filterList() {
-      debugger;
       const { value } = this.drawer;
 
       this.list.filter = this.list.points.filter((point: any) => {
         if (value[0].length && !(<any[]>value[0]).includes(point.Field)) { return false; }
         if (value[1].length && !(<any[]>value[1]).includes(point.Category)) { return false; }
-        if (value[2].length && !(<any[]>value[2]).includes(point.Influence)) { return false; }
-        if (value[3].length && !(<any[]>value[3]).includes(point.Activity)) { return false; }
-        if (value[4].length && !(<any[]>value[4]).includes(point.Youth)) { return false; }
+        if (value[2].length && !(<any[]>value[2]).includes(point.Interest)) { return false; }
+        if (value[3].length && !(<any[]>value[3]).includes(point.Influence)) { return false; }
+        if (value[4].length && !(<any[]>value[4]).includes(point.Activity)) { return false; }
+        if (value[5].length && !(<any[]>value[5]).includes(point.Youth)) { return false; }
 
         return true;
       });
@@ -250,7 +259,7 @@ export const useAppStore = defineStore('app', {
       this.initList();
 
       // Reset the drawer.
-      this.drawer.value = [[], [], [], [], []];
+      this.drawer.value = [[], [], [], [], [], []];
 
       // Reset the current point.
       this.mapToList.point = null;

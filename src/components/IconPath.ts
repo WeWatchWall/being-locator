@@ -17,7 +17,7 @@ export class IconPath {
     } else if (point.Field === IconPath.appStore.translations[IconPath.appStore.translations.lang].field.options[5]) {
       return 'youth';
     } else if (point.Field === IconPath.appStore.translations[IconPath.appStore.translations.lang].field.options[6]) {
-      return 'sustainability';
+      return 'innovation';
     } else if (point.Field === IconPath.appStore.translations[IconPath.appStore.translations.lang].field.options[7]) {
       return 'religion';
     } else if (point.Field === IconPath.appStore.translations[IconPath.appStore.translations.lang].field.options[8]) {
@@ -51,6 +51,10 @@ export class IconPath {
     } else if (point.Category === IconPath.appStore.translations[IconPath.appStore.translations.lang].category.options[7]) {
       return 'lime';
     } else if (point.Category === IconPath.appStore.translations[IconPath.appStore.translations.lang].category.options[8]) {
+      return 'teal';
+    } else if (point.Category === IconPath.appStore.translations[IconPath.appStore.translations.lang].category.options[9]) {
+      return 'aqua';
+    } else if (point.Category === IconPath.appStore.translations[IconPath.appStore.translations.lang].category.options[10]) {
       return 'dgrey';
     } else {
       return 'grey';

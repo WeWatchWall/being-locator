@@ -21,12 +21,22 @@
       class="my-2 mx-2"
     ></v-select>
 
+    
+    <v-select
+      clearable
+      :label="appStore.translations[appStore.translations.lang].interest.name"
+      :items="appStore.translations[appStore.translations.lang].interest.options"
+      multiple
+      v-model="appStore.drawer.value[2]"
+      class="my-2 mx-2"
+    ></v-select>
+
     <v-select
       clearable
       :label="appStore.translations[appStore.translations.lang].influence.name"
       :items="appStore.translations[appStore.translations.lang].influence.options"
       multiple
-      v-model="appStore.drawer.value[2]"
+      v-model="appStore.drawer.value[3]"
       class="my-2 mx-2"
     ></v-select>
 
@@ -35,7 +45,7 @@
       :label="appStore.translations[appStore.translations.lang].activity.name"
       :items="appStore.translations[appStore.translations.lang].activity.options"
       multiple
-      v-model="appStore.drawer.value[3]"
+      v-model="appStore.drawer.value[4]"
       class="my-2 mx-2"
     ></v-select>
 
@@ -44,7 +54,7 @@
       :label="appStore.translations[appStore.translations.lang].youth.name"
       :items="appStore.translations[appStore.translations.lang].youth.options"
       multiple
-      v-model="appStore.drawer.value[4]"
+      v-model="appStore.drawer.value[5]"
       class="my-2 mx-2"
     ></v-select>
 

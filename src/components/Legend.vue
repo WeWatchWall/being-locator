@@ -112,7 +112,7 @@
           size="30px"
         >
           <v-img
-            src="../../public/img/sustainability/green.png"
+            src="../../public/img/innovation/green.png"
           ></v-img>
         </v-avatar>
         {{ appStore.translations[appStore.translations.lang].field.options[6] }}
@@ -260,15 +260,29 @@
         class="ma-2"
         color="grey-darken-2"
       >
-        <v-icon start icon="mdi-checkbox-blank-circle" color="grey-darken-2"></v-icon>
+        <v-icon start icon="mdi-checkbox-blank-circle" color="teal"></v-icon>
         {{ appStore.translations[appStore.translations.lang].category.options[8] }}
+      </v-chip>
+      <v-chip
+        class="ma-2"
+        color="grey-darken-2"
+      >
+        <v-icon start icon="mdi-checkbox-blank-circle" color="light-blue"></v-icon>
+        {{ appStore.translations[appStore.translations.lang].category.options[9] }}
+      </v-chip>
+      <v-chip
+        class="ma-2"
+        color="grey-darken-2"
+      >
+        <v-icon start icon="mdi-checkbox-blank-circle" color="grey-darken-2"></v-icon>
+        {{ appStore.translations[appStore.translations.lang].category.options[10] }}
       </v-chip>
       <v-chip
         class="ma-2"
         color="grey"
       >
         <v-icon start icon="mdi-checkbox-blank-circle" color="grey"></v-icon>
-        {{ appStore.translations[appStore.translations.lang].category.options[9] }}
+        {{ appStore.translations[appStore.translations.lang].category.options[11] }}
       </v-chip>      
     </div>
   </v-card>

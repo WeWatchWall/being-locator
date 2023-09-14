@@ -1,41 +1,220 @@
 ID,OrgID,Organization,Name,IsNetwork,Telephone,Address,Latitude,Longitude
-1,1,UNICEF România,UNICEF România,0,0212017872,"Bulevardul Primăverii 48A, București 11975",44.46867880791542,26.091481366229296
+1,1,UNICEF,UNICEF,0,0212017872,"Bulevardul Primăverii 48A, București 11975",44.46867880791542,26.091481366229296
 2,2,Asociația Moașelor Independente,Asociația Moașelor Independente,0,0722265269,"Strada Marcel Iancu 11, București 020757",44.44496615532539,26.1186132
 3,4,Proiectul Rise,Proiectul Rise,0,,"Calea Victoriei 21-23, București 030167",44.433582965565286,26.097805938607774
-4,5,Rethink România,Rethink România,0,,"Strada Reînvierii 3-5, București 021122",44.45494915651493,26.121623356220567
-5,7,MozaiQ,MozaiQ,0,0764109385,"Strada Arcului 24, București 021034",44.438545869796016,26.111287582208867
-6,8,WHO România,WHO România,0,,"Bulevardul Primăverii 48a, București 014192",44.46867777177204,26.09147824103717
-7,9,Ministerul Sănătății,Ministerul Sănătății,0,0213072500,"Strada Cristian Popișteanu 1-3, București 030167",44.43795372476226,26.098634045504955
-8,10,Ministerul Educației,Ministerul Educației,0,0214056300,"Strada General H. M. Berthelot 28-30, București 010168",44.441916191184625,26.088872397324636
-9,11,Ministerul Muncii,Ministerul Muncii,0,0213158556,"Strada Demetru I. Dobrescu 2-4, București 030167",44.43914713140935,26.09861155499531
-10,12,Ministerul Mediului,Ministerul Mediului,0,0214089500,"Bulevardul Libertății 12, București 030167",44.42548308472223,26.091162197324067
-11,13,Institutul Național Pentru Sănătatea Publică,Institutul Național Pentru Sănătatea Publică,0,0213183620,"Strada Doctor Leonte Anastasievici 1-3, București 050463",44.43619328893382,26.069534597324317
-12,14,Casa Naționala de Asigurări de Sănătate,Casa Naționala de Asigurări de Sănătate,0,0800800950,"Bloc S19, Calea Călărași 248, București 030634",44.431427009738556,26.136072183830567
-13,15,Zi de Bine,Zi de Bine,0,0725565375,"Str. Uranus 150, București 021186",44.419764995919344,26.083618462809554
-14,16,Agenția Națională pentru Programe Comunitare în Domeniul Educației și Formării Profesionale (ANPCDEFP),Agenția Națională pentru Programe Comunitare în Domeniul Educației și Formării Profesionale (ANPCDEFP),0,,"Splaiul Independenței 313, București 060042",44.44112468976046,26.051882100000004
-15,18,Asociaţia Română de Psihiatrie a Copilului şi Adolescentului şi Profesii Asociate,Asociaţia Română de Psihiatrie a Copilului şi Adolescentului şi Profesii Asociate,0,0724797122,"Șoseaua Berceni 10, București 077160",44.38737887044235,26.127200395838294
-16,21,Asociația Magic,Asociația Magic,1,,"Strada Grigore Cobălcescu 13, București 010191",44.43757519087523,26.086701603043377
-17,21,Asociația Magic,Asociatia Magic (+MagicHome),1,0723658001,"Str. Caisului 23A, Dobroești 077085",44.46452017912403,26.17338312589167
-18,25,Accept,Accept,0,021 252 56 20,"Strada Lirei 10, București 030167",44.44021259257864,26.125070520712406
-19,27,Centrul de sănătate ARAS,Centrul de sănătate ARAS,0,0212100747,"Strada Ocolului 20, București 030167",44.44810657309641,26.11320834742314
-20,34,Asociatia Umanitara Concordia,Asociatia Umanitara Concordia,0,0311076981,"Drumul Regimentului 20D, București",44.50380040244529,26.052822779504574
-21,35,Coalitia pentru Educatie,Coalitia pentru Educatie,0,,"Strada Stelea Spătarul 22, București 030167",44.43174828428266,26.108403897324123
-22,79,Clinica Hope,Clinica Hope Brâncoveanu,1,0724792901,"Strada Grâului 21, București 041273",44.39883580304745,26.111682119212983
-23,79,Clinica Hope,Clinica Hope Pleșoianu,1,0770142287,"Strada Virgil Pleșoianu 79 A, București 011526",44.4632239570727,26.067654599771448
-24,79,Clinica Hope,Clinica Hope Unirii,1,0756120938,"Strada Sfântul Ștefan 7, București 023997",44.43584623038123,26.11654082860692
-25,79,Clinica Hope,Clinica Hope Cluj,1,0755034328,"Strada Pădurii 9a, Cluj-Napoca 400347",46.752474373683626,23.586499071164535
-26,79,Clinica Hope,Clinica Hope Iași,1,0742444098,"Strada Bașotă 2, Iași 700082",47.16554595282679,27.59088452883546
-27,79,Clinica Hope,Clinica Hope Timișoara,1,0751497995,"Str. Arieș 3, Timișoara",45.7433271089653,21.237483797374118
-28,89,Clinica Alegria,Clinica Alegria,0,0770508524,"Strada Turnu Măgurele 240-242, București 041713",44.37768492904536,26.12353482883546
-29,90,Clinica Nice,Clinica Nice,0,0790661600,"Bulevardul Regina Maria 23 Etaj 1, București 040122",44.42238560855346,26.093065339652867
-30,91,Centrul Medical Bellanima,Centrul Medical Bellanima,0,0731151153,"Str. Viitorului 26, zona Piata Gemeni, București 020612",44.44369675161542,26.110884868489265
-31,92,Clinica Senex,Clinica Psihoterapie Bucuresti - Senex,1,0724222500,"Al. Obregia, nr. 25, bl. I4A, București 041721",44.3836148358696,26.115529468486933
-32,92,Clinica Senex,Psihoterapie Pitesti - Clinica Senex,1,0724222500,"Strada Crinului 1a, Pitești 110109",44.859042055857905,24.875254897340234
-33,93,Clinica The Mind,Clinica The Mind,0,0217812259,"Strada Ana Davila 13, București 050491",44.43298884880803,26.068201897324304
-34,94,Clinica Aproape,Clinica Aproape,0,0722187700,"Bulevardul Alexandru Ioan Cuza 13A, București 011051",44.44885319391322,26.08124872616022
-35,95,Clinica Renia,Clinica Renia,0,0748662662,"Strada Doctor Nicolae Turnescu 11, București 050467",44.43531558858873,26.067281797324366
-36,96,Clinica Psy For You,Clinica Psy For You,0,0744310310,"Strada Locotenent Aviator Vasile Fuică 70, București 012086",44.472837791535795,26.058272166641988
-37,97,Centrul Maze,Centrul Maze - Cabinete Psihologice si Psihoterapie Bucharest,1,0749183354,"Strada Traian 107, București 030167",44.434002710076065,26.120708697324265
-38,97,Centrul Maze,Centrul Maze - Cabinete Psihologice si Psihoterapie Cluj,1,0749183354,"Piața Ștefan cel Mare 5, Cluj-Napoca 400192",46.76937232255608,23.597107697414096
-39,98,Centrul de Psihoterapie IPSI,Centrul de Psihoterapie IPSI,0,0731077076,"Intrarea Victor Eftimiu 5-7, București 010153",44.43667904977533,26.09370829732429
-40,99,Clinica de Psihoterapie Oana Nicolau,Clinica de Psihoterapie Oana Nicolau,0,0733303333,"Strada George Georgescu 46, București 065441",44.42373154638108,26.092434168488428
+4,5,Rethink,Rethink,0,,"Strada Reînvierii 3-5, București 021122",44.45494915651493,26.121623356220567
+5,6,Preventis,Preventis,0,0364805114,"Strada René Descartes 6, Cluj-Napoca 400486",46.757349820915174,23.593037697581856
+6,7,MozaiQ,MozaiQ,0,0764109385,"Strada Arcului 24, București 021034",44.438545869796016,26.111287582208867
+7,8,WHO,WHO,0,,"Bulevardul Primăverii 48a, București 014192",44.46867777177204,26.09147824103717
+8,9,Ministerul Sănătății,Ministerul Sănătății,0,0213072500,"Strada Cristian Popișteanu 1-3, București 030167",44.43795372476226,26.098634045504955
+9,10,Ministerul Muncii,Ministerul Muncii,0,0213158556,"Strada Demetru I. Dobrescu 2-4, București 030167",44.43914713140935,26.09861155499531
+10,11,Ministerul Mediului,Ministerul Mediului,0,0214089500,"Bulevardul Libertății 12, București 030167",44.42548308472223,26.091162197324067
+11,12,Institutul Național Pentru Sănătatea Publică,Institutul Național Pentru Sănătatea Publică,0,0213183620,"Strada Doctor Leonte Anastasievici 1-3, București 050463",44.43619328893382,26.069534597324317
+12,13,Casa Naționala de Asigurări de Sănătate,Casa Naționala de Asigurări de Sănătate,0,0800800950,"Bloc S19, Calea Călărași 248, București 030634",44.431427009738556,26.136072183830567
+13,14,Zi de Bine,Zi de Bine,0,0725565375,"Str. Uranus 150, București 021186",44.419764995919344,26.083618462809554
+14,15,Asociația Magic,Asociația Magic,1,,"Strada Grigore Cobălcescu 13, București 010191",44.43757519087523,26.086701603043377
+15,15,Asociația Magic,Asociatia Magic (+MagicHome),1,0723658001,"Str. Caisului 23A, Dobroești 077085",44.46452017912403,26.17338312589167
+16,16,Agenția Națională pentru Programe Comunitare în Domeniul Educației și Formării Profesionale (ANPCDEFP),Agenția Națională pentru Programe Comunitare în Domeniul Educației și Formării Profesionale (ANPCDEFP),0,,"Splaiul Independenței 313, București 060042",44.44112468976046,26.051882100000004
+17,17,Centrul Național pentru Sănătatea Mintală și Lupta Anti-droguri,Centrul Național pentru Sănătatea Mintală și Lupta Anti-droguri,0,0314255673,"Strada Thomas Masaryk 4, București 030167",44.44071301963199,26.105043457672178
+18,18,Asociaţia Română de Psihiatrie a Copilului şi Adolescentului şi Profesii Asociate,Asociaţia Română de Psihiatrie a Copilului şi Adolescentului şi Profesii Asociate,0,0724797122,"Șoseaua Berceni 10, București 077160",44.38737887044235,26.127200395838294
+19,19,Institutul Mind,Institutul Mind,0,0742173822,"Strada Mihai Eminescu 41, București 010516",44.44757431495988,26.102280626154066
+20,20,Asociația DEIS,Asociația DEIS,0,0771480657,"Strada Culturii 7A, Baia Mare 430316",47.65490489054978,23.574207297617104
+21,21,Asociația Little People,Asociația Little People,0,0743773843,"Calea Mănăștur 42B, Cluj-Napoca 400535",46.7617528222947,23.567171997582044
+22,22,"Centrul Județean De Resurse Și De Asistență Educațională, Cluj","Centrul Județean De Resurse Și De Asistență Educațională, Cluj",0,0364880711,"Str. Argeș 24, Cluj-Napoca 400159",46.77430104927569,23.596981497007402
+23,23,Speranțe și Case Pentru Copii,Speranțe și Case Pentru Copii,0,0262227419,"Bulevardul Regele Mihai I 2a, Baia Mare, 430281",47.65649177786381,23.569809995764533
+24,24,Accept,Accept,0,0212525620,"Strada Lirei 10, București 030167",44.44021259257864,26.125070520712406
+25,25,Confederația Caritas,Confederația Caritas,0,0212304013,"Washington Residence, Strada Washington 38, București 011796",44.45562654751469,26.094915212664315
+26,26,Centrul de sănătate ARAS,Centrul de sănătate ARAS,0,0212100747,"Strada Ocolului 20, București 030167",44.44810657309641,26.11320834742314
+27,27,Directia Generală de Asistență Socială și Protecția Copilului Cluj,Directia Generală de Asistență Socială și Protecția Copilului Cluj,0,0264594941,"Str. General Eremia Grigorescu 37 - 39, Cluj-Napoca",46.77275667490811,23.570770597582502
+28,28,"Insitutul al Acțiunilor de Pace, Educație și Cercetare România","Insitutul al Acțiunilor de Pace, Educație și Cercetare România",0,0264420298,"Strada Ion Ghica 30, Cluj-Napoca 400306",46.770277393806985,23.572325000000003
+29,29,Alianța Națională a Organizațiilor Studențești din România,Alianța Națională a Organizațiilor Studențești din România,0,0215696133,"Calea Plevnei 61, București 010223",44.43702554986623,26.079060039821446
+30,30,Clinica Universitară De Psihologie Babeș-Bolyai Psytech,Clinica Universitară De Psihologie Babeș-Bolyai Psytech,0,,Str. Republicii nr. 37 Cluj-Napoca 400015,46.7631742722928,23.58923396874602
+31,32,Asociatia Umanitara Concordia,Asociatia Umanitara Concordia,0,0311076981,"Drumul Regimentului 20D, București",44.50380040244529,26.052822779504574
+32,33,Coalitia pentru Educatie,Coalitia pentru Educatie,0,,"Strada Stelea Spătarul 22, București 030167",44.43174828428266,26.108403897324123
+33,34,AIESEC,AIESEC,0,0723629225,"Str. Rezervelor 61B, București 077040",44.44580112437579,25.987722897225222
+34,35,Academia ThinkUp,Academia ThinkUp,0,,"Aleea Băișoara, Cluj-Napoca 400445, Romania",46.76418402956025,23.6244053386293
+35,36,Uniunea Națională a Studenților din România,,0,0765247311,"Students Cultural House, Calea Plevnei 61, București 010236",44.43696793169507,26.079026368657505
+36,37,Asociația Young Roma Maramureș,Asociația Young Roma Maramureș,0,0740563641,"Strada Dacia 1, cam. 5, Baia Mare",47.66029774506088,23.581588697617345
+37,38,Grupul PONT,Grupul PONT,0,0757055590,"Strada Horea 5, ap. 7, Cluj-Napoca 400174",46.774981123321574,23.586860226418583
+38,39,Centru Filia,Centru Filia,0,0213138024,"Bulevardul Decebal 14, București 030967",44.42879461145484,26.134341883821136
+39,40,Centrul de Educație C-EDU,Centrul de Educație C-EDU,0,,"Aleea Băișoara 2a, Cluj-Napoca 400394",46.76446227264425,23.62463819758203
+40,41,Wello,Wello,0,0740551863,"Strada Colinei 20, Cluj-Napoca 400520",46.751029098834756,23.536479086305146
+41,42,Centrul Cultural Cluj,Centrul Cultural Cluj,0,0372773603,"Strada Fluierașului 3, Cluj-Napoca 400073",46.76673732006178,23.59936868223785
+42,43,Educație pentru România,Educație pentru România,0,,"Nova Building, Strada Gara Herăstrău, București 020334",44.47866486078732,26.10647873982291
+43,44,Lideri Români de Afaceri,Lideri Români de Afaceri,0,0217941498,"Calea Dorobanți 42, București",44.449600953163596,26.099563197494092
+44,45,Centru Rațiu pentru Democrație,Centru Rațiu pentru Democrație,0,,"Piața 1 Decembrie 1918 1, Turda 401094",46.57038082096677,23.78498495556642
+45,46,Inspectoratul Școlar Județean Cluj,Inspectoratul Școlar Județean Cluj,0,0264594672,"Str. Argeș 24, Cluj-Napoca 400394",46.77416474754798,23.596974235975843
+46,47,Asociația pentru Valori în Educație (AVE),Asociația pentru Valori în Educație (AVE),0,,"Strada Semilunei 4, București 030167",44.439060679320406,26.112522
+47,48,Primăria Municipiului Cluj-Napoca,Primăria Municipiului Cluj-Napoca,0,0264596030,"Calea Moților 3, Cluj-Napoca 400001",46.768243437837285,23.58476519645059
+48,49,Asociația Mușatinii Roman,Asociația Mușatinii Roman,0,,"Piața Roman Vodă 1, Roman",46.926254671139,26.930025797588442
+49,50,Consiliul Județean Cluj,Consiliul Județean Cluj,0,0372640000,"Calea Dorobanților 106, Cluj-Napoca 400609",46.776710075987225,23.616079926418696
+50,51,Academia de Muzică Gheorghe Dima,Academia de Muzică Gheorghe Dima,0,0264591241,"Strada Ion I. C. Brătianu 25, Cluj-Napoca 400079",46.768708773803276,23.592935497582335
+51,52,Asociația Tineri UN România,Asociația Tineri UN România,0,0740130307,"Bulevardul Mihail Kogălniceanu 36-46, București 050107",44.435312735678174,26.08213141265908
+52,53,Uniunea Studenților din România,Uniunea Studenților din România,0,0725535589,"Calea Plevnei 61, București 010223",44.43699061353632,26.07925499749359
+53,55,Universitatea Iuliu Hațiganu pentru Medicină și Farmacie,Universitatea Iuliu Hațiganu pentru Medicină și Farmacie,0,0264597256,"Strada Victor Babeș 8, Cluj-Napoca 400347",46.76163295157663,23.5827986488522
+54,56,Universitatea de Științe Agriculture și Medicină Veterinară din Cluj-Napoca,Universitatea de Științe Agriculture și Medicină Veterinară din Cluj-Napoca,0,0374492010,"Universitatea de Stiinte Agricole si Medicina Veterinara, Calea Mănăștur 3-5, Cluj-Napoca 400372",46.76098387169501,23.570790968745847
+55,57,Universitatea Tehnică din Cluj-Napoca,Universitatea Tehnică din Cluj-Napoca,0,0264401200,"Strada Memorandumului 28, Cluj-Napoca 400114",46.769260893864725,23.585707784457593
+56,58,Itsy Bitsy,Itsy Bitsy,0,0213119810,"Strada Leonida nr 19, București 020555",44.448393652847,26.109224997493968
+57,59,Asociatia OvidiuRo,Asociatia OvidiuRo,0,0213158806,"Șoseaua Vitan-Bârzești 11A, București 042122",44.391332971298304,26.15022526865577
+58,60,Asociația Reality Check,Asociația Reality Check,0,0726840791,"Bd. Ion C. Brătianu 44, ap. 63, 030177, București",44.42998527345099,26.103220826149347
+59,61,Dragoste Desculță,Dragoste Desculță,0,0756854704,"Strada Mihail Kogălniceanu 15A, Negrești",46.83558575716695,27.452361184475897
+60,62,"Ministerul pentru Familie, Tineri și Șanse Egale","Ministerul pentru Familie, Tineri și Șanse Egale",0,0721024804,"World Trade Plaza, Piața Montreal 10, București 011469",44.475658915538354,26.0698632974951
+61,63,Consiliul Tineretului din România ,Consiliul Tineretului din România ,0,,"Strada Turturelelor 11, București",44.42711934726922,26.12548736865705
+62,64,Consiliul Economic și Social ,Consiliul Economic și Social ,0,0213102356,"Str. Dr. Dimitrie D. Gerota 7-9, București 030167",44.43665937520058,26.105190183823385
+63,66,Cognosis,Cognosis,0,0732967551,"Strada Lucian Blaga 2A, Sibiu 550169",45.79340449043011,24.156156797544806
+64,67,Centrul Affinity,Centrul Affinity,0,0753023003,"Strada Constantin Brâncuși 27, Cluj-Napoca 400458",46.76671049881464,23.603021355620722
+65,68,Educație Mintală,Educație Mintală,0,0749110148,"Strada Dacia 3, Cluj-Napoca 400044",46.77545312338601,23.588513468746395
+66,69,Terra-Pi,Terra-Pi,0,0726066912,"Strada Rubin Patiția 7, Cluj-Napoca 400394",46.771223826171536,23.60442592641856
+67,70,Terapia Reflect,Terapia Reflect,0,0743534442,"Bulevardul 21 Decembrie 1989 nr. 63, Cluj-Napoca 400124",46.77518524890775,23.60129595562314
+68,71,Psi8imal,Psi8imal,0,0758460419,"Strada Constantin Brâncuși 56, Cluj-Napoca 400347",46.76500852529804,23.605607811073938
+69,72,Med Anima,Med Anima,1,0747202212,"Strapungere Silvestru, nr. 60, bl. CL 11, parter, Iași 700004",47.17079001274892,27.56244196936203
+70,72,Med Anima,Med Anima,1,0754431431,"Strada Simion Bărnuțiu 34, Timișoara 300133",45.763399314552565,21.25437903073944
+71,72,Med Anima,Med Anima,1,0746143650,"com. Belcesti, jud.Iași, tronson B, Bl. 14., Belcești 707045",47.30828025280795,27.085249084706387
+72,73,Clinica Hope,Clinica Hope Brâncoveanu,1,0724792901,"Strada Grâului 21, București 041273",44.39883580304745,26.111682119212983
+73,73,Clinica Hope,Clinica Hope Pleșoianu,1,0770142287,"Strada Virgil Pleșoianu 79 A, București 011526",44.4632239570727,26.067654599771448
+74,73,Clinica Hope,Clinica Hope Unirii,1,0756120938,"Strada Sfântul Ștefan 7, București 023997",44.43584623038123,26.11654082860692
+75,73,Clinica Hope,Clinica Hope Cluj,1,0755034328,"Strada Pădurii 9a, Cluj-Napoca 400347",46.752474373683626,23.586499071164535
+76,73,Clinica Hope,Clinica Hope Iași,1,0742444098,"Strada Bașotă 2, Iași 700082",47.16554595282679,27.59088452883546
+77,73,Clinica Hope,Clinica Hope Timișoara,1,0751497995,"Str. Arieș 3, Timișoara",45.7433271089653,21.237483797374118
+78,74,Asociația de Pshihoterapie Integrativă și Psihologie Clinică,Asociația de Pshihoterapie Integrativă și Psihologie Clinică,0,0740316166,"Str. Grigore Ghica Vodă nr. 7, Cabinet 4, etaj 1, Iași 700469",47.16039862666918,27.596301931654807
+79,75,Clinica Psihologie Eleven,Clinica Psihologie Eleven,0,0744681577,"Bulevardul Dimitrie Cantemir 3, Iași 700233",47.15167927490498,27.581675197597285
+80,76,PsihoHelp,PsihoHelp,0,0749353533,"Șoseaua Nordului 110, București 014131",44.48381743309892,26.086358983835805
+81,77,Realist Dreamer,Realist Dreamer,0,0740495692,"Strada Canta, nr. 7,  Iași 700535",47.17325778458357,27.54861026876212
+82,79,Asociaţia Studenţilor Universităţii de Artă şi Design Cluj-Napoca,Asociaţia Studenţilor Universităţii de Artă şi Design Cluj-Napoca,0,0264595021,"Piața Unirii 31, Cluj-Napoca 400098",46.76973644925746,23.5909080552899
+83,80,Linnify,Linnify,0,0742028083,"Strada Măcinului 34, Cluj-Napoca 400475",46.7608101474647,23.611073813291352
+84,81,Universitatea Alexandru Ioan Cuza Iasi,Universitatea Alexandru Ioan Cuza Iasi,0,0232201000,"Bulevardul Carol I 11, Iași 700506",47.17435157801996,27.571493268762065
+85,82,Universitatea din Bucuresti,Universitatea din Bucuresti,0,0213077300,"Bulevardul Regina Elisabeta Nr. 4-12, București 030018",44.43547733885633,26.101634053412745
+86,83,Clinica Alegria,Clinica Alegria,0,0770508524,"Strada Turnu Măgurele 240-242, București 041713",44.37768865975073,26.12353481264361
+87,84,Clinica Nice,Clinica Nice,0,0790661600,"Bulevardul Regina Maria 23 Etaj 1, București 040122",44.42238560855346,26.093065339652867
+88,85,Centrul Medical Bellanima,Centrul Medical Bellanima,0,0731151153,"Str. Viitorului 26, zona Piata Gemeni, București 020612",44.44369675161542,26.110884868489265
+89,86,Clinica The Mind,Clinica The Mind,0,0217812259,"Strada Ana Davila 13, București 050491",44.43298884880803,26.068201897324304
+90,87,Clinica Renia,Clinica Renia,0,0748662662,"Strada Doctor Nicolae Turnescu 11, București 050467",44.4353155885887,26.067281797493614
+91,88,Clinica Psy For You,Clinica Psy For You,0,0744310310,"Strada Locotenent Aviator Vasile Fuică 70, București 012086",44.472837791535795,26.058272166641988
+92,89,Centrul Maze,Centrul Maze,0,0749183354,"Strada Traian 107, București 030167",44.434002710076065,26.120708697324265
+93,90,Centrul de Psihoterapie IPSI,Centrul de Psihoterapie IPSI,0,0731077076,"Intrarea Victor Eftimiu 5-7, București 010153",44.43667904977533,26.09370829732429
+94,91,Clinica de Psihoterapie Oana Nicolau,Clinica de Psihoterapie Oana Nicolau,0,0733303333,"Strada George Georgescu 46, București 065441",44.42373154638108,26.092434168488428
+95,92,Clinica Nine,Clinica Nine,0,0736841833,"Str. Ana Aslan 6, Cluj-Napoca 400347",46.73920251843891,23.58847509758114
+96,93,Asociația Gutenberg,Asociația Gutenberg,0,0759674966,"Str. Universității, Cluj-Napoca 400091",46.767111624488166,23.590440297582248
+97,94,Asociația În Dialog,Asociația În Dialog,0,0747303049,"Strada Lascăr Catargi 22, Iași",47.172467180205366,27.579013293955708
+98,95,Asociația Life-Learning Education,Asociația Life-Learning Education,0,,"Strada Onești 41, Constanța 900001",44.2022519797634,28.644714468648754
+99,96,Universitatea din Bucuresti - Facultatea de Psihologie și Științele Educației,Universitatea din Bucuresti - Facultatea de Psihologie și Științele Educației,0,0314253452,"Șoseaua Panduri 90, București 050663",44.43146759651001,26.0623783838219
+100,97,Institutul Național pentru Managementul Serviciilor de Sănătate,Institutul Național pentru Managementul Serviciilor de Sănătate,0,,"Strada Vaselor 31, București 030167",44.44468797107931,26.12382526865775
+101,98,Centrul Judeţean de Resurse şi de Asistenţă Educaţională Galaţi,Centrul Judeţean de Resurse şi de Asistenţă Educaţională Galaţi,0,0236311158,"Str. Portului , Nr. 55B; Internatul Grupului Scolar de Marina, Etaj 3, Galați 800211",45.43477077107709,28.066529068694955
+102,99,Casa de Tranziție,Casa de Tranziție,0,0737520854,"Strada George Barițiu 16, Cluj-Napoca 400027",46.77331655258609,23.586177640278205
+103,100,Reactor Cluj,Reactor Cluj,0,0747197501,"Strada Petőfi Sándor 4, Cluj-Napoca 400394",46.773869675211735,23.60615072641856
+104,101,Asociația Studenților Psihologi din România,Asociația Studenților Psihologi din România,0,,"Strada Bogdan Petriceicu Hasdeu 45, Cluj-Napoca 400394",46.762794921658326,23.579865326418222
+105,103,Asociaţia de Dezvoltare Intercomunitară Zona Metropolitană Cluj,Asociaţia de Dezvoltare Intercomunitară Zona Metropolitană Cluj,0,0747196681,"Piața Unirii 2 ap. 4, Cluj-Napoca 400394",46.76876877112872,23.591134739910142
+106,104,Direcția de Asistență Socială și Medicală,Direcția de Asistență Socială și Medicală,0,0264599316,"Strada Venus fn, Cluj-Napoca",46.77551654238358,23.618191774273342
+107,105,Federaţia Asociaţiilor Studenţilor în Medicină,Federaţia Asociaţiilor Studenţilor în Medicină,0,,"Strada Bogdan Petriceicu Hasdeu 90-92, Cluj-Napoca 400000",46.76359686731328,23.578580211073774
+108,106,Organizaţia Studenţilor din UBB,Organizaţia Studenţilor din UBB,0,,"Strada Păstorului, Cluj-Napoca",46.76163524705609,23.578248955619348
+109,107,Organizația Studenților din Universitatea Tehnică Cluj,Organizația Studenților din Universitatea Tehnică Cluj,0,,"Strada Memorandumului 28, Cluj-Napoca 400114",46.76923157394585,23.585686339910076
+110,108,Federația Organizațiilor Neguvernamentale de Tineret din Iași,Federația Organizațiilor Neguvernamentale de Tineret din Iași,0,0740513864,"Strada Gându 10A, Iași 700013",47.165084759978114,27.575814255269872
+111,110,Coaching Partners,Coaching Partners,0,0773948264,"Bulevardul Regiei 6B, București 060274",44.44611155592574,26.056961441497865
+112,111,Paradis College,Paradis College,0,0725893627,"8 C, Str. Dealul Zorilor, Rediu 707410",47.17702132779948,27.54253753807346
+113,112,Asociatia Română de Literație,Asociatia Română de Literație,0,0332404592,"Strada Golia, Iași",47.16348748189916,27.59047939759755
+114,113,Medlife,Hyperclinica Medlife,0,0232960,"Strada Vasile Lupu Nr.78, Iași 700259",47.15993452442661,27.611671415369717
+115,114,Cabinet Dr. Zoitanu Raluca,Cabinet Dr. Zoitanu Raluca,0,0374491454,"Calea Giulești 135 parter, București 060265",44.4634400250807,26.040888754994373
+116,115,Asociatia Medicilor de Familie București,Asociatia Medicilor de Familie București,0,0213149571,"Strada Agricultori 33, București 030167",44.4385304482317,26.13174453796872
+117,116,Medsana,Clinica Medsana Primăverii,1,0219607,"Bulevardul Primăverii 9, București 014192",44.46748644820439,26.088512179053172
+118,116,Medsana,Clinica Medsana Cotroceni,1,0219607,"Strada Doctor Ioan Nanu-Muscel 12, București 050521",44.43331273890614,26.07261989740734
+119,117,Centrul Eka,Centrul Eka,0,0374820040,"Strada Horațiu 28, București 010834",44.442556236627226,26.08206188382487
+120,119,Penitenciarul Vaslui,Penitenciarul Vaslui,0,0235322510,"2, Str. Avicola, Mun. Vaslui, Jud. Vaslui",46.63039460107741,27.757453026413106
+121,120,Spitalul Providența,Spitalul Providența,0,0232241271,"Șoseaua Nicolina 115, Iași 700714",47.125515197091715,27.569550126884515
+122,121,Centrul Sport,Centrul Sport,0,0773864560,"Strada Parângului 76, București 012328",44.47602584101467,26.04859048383378
+123,125,Ministerul Educației,Ministerul Educației,0,0214056300,"Strada General H. M. Berthelot 28-30, București 010168",44.44193424988829,26.088856167884035
+124,126,"Universitatea ""Ștefan cel Mare"" Suceava","Universitatea ""Ștefan cel Mare"" Suceava",0,0230216147,"Strada Universității 13, Suceava 720229",47.64111536813602,26.24386089819305
+125,127,SOS Satul Copiilor București,SOS Satul Copiilor București,0,0216680090,"Calea Floreasca 165, București 014459",44.47594190457144,26.10311763982272
+126,128,Centrul Național De Politici Și Evaluare În Educație,Centrul Național De Politici Și Evaluare În Educație,0,0213144411,"Strada General H. M. Berthelot 26, București 010164",44.44195917658955,26.08915508382463
+127,129,Agenția Română de Asigurare a Calității în Învățământul Preuniversitar,Agenția Română de Asigurare a Calității în Învățământul Preuniversitar,0,0212067602,"Bulevardul Mărăști 59, București 011464",44.47180871503318,26.072101268658766
+128,130,Autoritatea Națională pentru Protecția Drepturilor Copilului și Adopție,Autoritatea Națională pentru Protecția Drepturilor Copilului și Adopție,0,0213100789,"Bulevardul General Gheorghe Magheru 7, București 010322",44.44234667669127,26.098217812660817
+129,131,Agenția Națională Anti-drog,Agenția Națională Anti-drog,0,0213037080,"Bloc A4, Bulevardul Unirii 37, București 030823",44.4274763855059,26.10921062818185
+130,132,Centrul Municipiului București De Resurse Și Asistenta Educaționala,Centrul Municipiului București De Resurse Și Asistenta Educaționala,0,0212323071,"Strada Luigi Galvani 20, București",44.46104891362227,26.112827868658425
+131,133,Senatul Român,Senatul Român,0,0213158942,"Calea 13 Septembrie 1-3, București 050711, Romania",44.42682791068152,26.087420354984665
+132,134,Cercetașii Români,Cercetașii Români,0,0723723827,"Strada Vigilenței 7, București 030167",44.43064399396999,26.093357739821197
+133,135,Asociația CIVICA,Asociația CIVICA,0,0742564637,"Strada Grigore Vieru 3, Iași 700259",47.17095540958008,27.582114655733427
+134,136,Fundația Comunitară Iași,Fundația Comunitară Iași,0,0770430390,"Strada Rândunica 1, Iași 700259",47.15704518461843,27.59984033992531
+135,137,Fundația Bethany,Fundația Bethany,0,0232278535,"Stradela Varianta Uzinei 1, Iași 700259",47.161286086365536,27.578092539925425
+136,138,Asociatia Nationala pentru Copii si Adulti cu AUTISM din Romania,Asociatia Nationala pentru Copii si Adulti cu AUTISM din Romania,0,0232235598,"Strada Apelor 6, Iași, Romania",47.16594174833353,27.59607982828648
+137,139,Asociația Artipic,Asociația Artipic,0,0752991352,"Bulevardul Primăverii 5, Iași 700259",47.14854867447504,27.5923589975971
+138,140,Consiliul Municipal al Elevilor București,Consiliul Municipal al Elevilor București,0,0770408926,"Bulevardul Ion Mihalache 13, București",44.45432104610315,26.081771912838633
+139,141,Fundația Motivation,Fundația Motivation,0,0314230370,"Șoseaua Alexandriei 96, Bragadiru 077025",44.389028229616315,26.01266435497443
+140,143,"Institutul National pentru Sanatatea Mamei si Copilului ""Alessandrescu-Rusescu""","Institutul National pentru Sanatatea Mamei si Copilului ""Alessandrescu-Rusescu""",0,0212422713,"Bulevardul Lacul Tei 120, București 20382",44.46276653927621,26.12287501266628
+141,144,Mind Education,Mind Education,0,0725575214,"Strada Popa Savu 40, București 014192",44.462748979543036,26.085095388028826
+142,148,Complex Hârja,Complex Hârja,0,0752270375,"Strada Nemirei 174, Hârja 607368",46.17272319165965,26.478263433847083
+143,149,Federatia ONG pentru copil,Federatia ONG pentru copil,0,0213188581,"Strada Occidentului 44, București 010984",44.447092437221784,26.08628512615389
+144,150,Salvați Copii,Salvați Copii,0,0213166176,"Intrarea Ştefan Furtună 3, București 010899, Romania",44.44082375086205,26.074579982149363
+145,151,Fundația ESTUAR,Fundația ESTUAR,0,0314171888,"Strada Ion Creangă 6C, București 050864",44.42411370878009,26.0817995686571
+146,152,Fundația World Vision,Fundația World Vision,0,0731444013,"Strada Rotașului, București 012167",44.463540540538254,26.05849821941168
+147,153,AIDRom,AIDRom,0,0212124868,"Strada Ilarie Chendi 14, București 030167",44.43956451080516,26.131457368657575
+148,154,Gifted School,Gifted School,0,0730512861,"Strada Măgura Vulturului 77-79, București 021705",44.44348151131867,26.13653116865766
+149,155,Casa Corpului Didactic a Municipiului Bucureşti,Casa Corpului Didactic a Municipiului Bucureşti,0,0213134901,"Splaiul Independenței 315 A, București 060043",44.44429735004643,26.051724651460823
+150,156,Agenţia Română de Asigurare a Calităţii în Învăţământul Superior,Agenţia Română de Asigurare a Calităţii în Învăţământul Superior,0,,"Bulevardul Mărăști 59, București 011464",44.47000219650733,26.068014854996083
+151,157,Direcția Generală de Asistență Socială și Protecția Copilului Sector 6,Direcția Generală de Asistență Socială și Protecția Copilului Sector 6,0,0217457237,"Strada Cernișoara 38, București 061019",44.438418383600485,26.022643550118694
+152,158,Școala Cambridge din București,Școala Cambridge din București,0,0212102131,"Strada Erou Iancu Nicolae 126C, Voluntari 077190",44.5157610959502,26.116338783844373
+153,159,Liceul Teoretic Internațional de Informatică București,Liceul Teoretic Internațional de Informatică București,0,0213276570,"Strada Balta Albina 9, București 032622",44.408216242314936,26.21120684167301
+154,160,Centrul IT Cluj,Centrul IT Cluj,0,0730860023,"Strada Emil Isac 13, Cluj-Napoca 400023",46.770081074177696,23.58494486874629
+155,161,Centrul Voluntari Cluj-Napoca,Centrul Voluntari Cluj-Napoca,0,0264431411,"Strada Virgil Fulicea 1, Cluj-Napoca 400022, Romania",46.77082342275415,23.587530968746268
+156,162,Asociația Autism Transilvania,Asociația Autism Transilvania,0,0748211776,"Strada Gheorghe Marinescu 86, Cluj-Napoca 400347",46.75957749668376,23.58064714212709
+157,163,Minte Forte,Minte Forte,0,0757070869,"Bloc Y9, Calea Dorobanților 74, Cluj-Napoca 400121",46.77363092313737,23.608294597582447
+158,164,Asociația Start-up-uri Românești,Asociația Start-up-uri Românești,0,0742480889,"Strada Regele Ferdinand, Cluj-Napoca 400110",46.77307857112905,23.589687268746406
+159,165,ClujHub,ClujHub,0,0740021644,"Strada Ferdinand 22-26, 3rd Floor, Cluj-Napoca 400110",46.77295297496156,23.5893881975824
+160,167,FreshBlood HealthTech,FreshBlood HealthTech,0,0744695673,"Strada Cotită 9, Cluj-Napoca 400394",46.772645360744406,23.590237470738195
+161,169,Fundația New Horizons,Fundația New Horizons,0,,"Calea Turzii 189B, Cluj-Napoca 400491",46.75055489440367,23.594929413288483
+162,171,Asociația Dezvoltare Activă,Asociația Dezvoltare Activă,0,0768884653,"Strada Banca Națională 42, Bacău 600203",46.57358932140378,26.908717084403207
+163,172,Crucea Roșie,Crucea Roșie,0,0213176006,"Strada Biserica Amzei 29, București 010393, Romania",44.445837173980884,26.096846674142576
+164,173,Fundația Crucea Alb-Galbenă,Fundația Crucea Alb-Galbenă,0,0213151256,"Bulevardul Regina Maria 21, București",44.42282517157455,26.093379983819666
+165,175,Clinica PsyLife,PsyLife Grigorescu,1,,"Strada Eremia Grigorescu, Nr 126, scara 2, ap 14 Cluj Napoca",46.77329247505419,23.563548339910277
+166,175,Clinica PsyLife,PsyLife Mărăști,1,,"Strada Între Lacuri, Nr 20, Ap P01, Parter Cluj Napoca",46.776731171129256,23.623400211074372
+167,175,Clinica PsyLife,PsyLife Aurel Vlaicu,1,,"Strada Aurel Vlaicu, Nr 182, Ap 1, Parter Cluj Napoca",46.78009038269425,23.636343797582665
+168,175,Clinica PsyLife,PsyLife Hub,1,,"Strada Eugen Ionesco 46/2, Cluj-Napoca",46.74434721914099,23.584542055253515
+169,176,Psihologul Vesel,Psihologul Vesel,0,0743210518,"Strada Ștefan Octavian Iosif 9b, Oradea",47.057690871148104,21.913084768757482
+170,177,Institutul pentru Studiul si Tratamentul Traumei,Institutul pentru Studiul si Tratamentul Traumei,0,0730285582,"Strada Giacomo Puccini 8, București 020194",44.465360982725755,26.103005312666987
+171,180,Pagina de Psihologie,Pagina de Psihologie,0,,"Intrarea Tipografiei, București 060776",44.442232276661244,26.05940348382476
+172,181,Asociația Smart and Happy,Asociația Smart and Happy,0,0757539898,"Intrarea Borceag 2, București 031505",44.4134961073889,26.128858897492734
+173,182,Centrul Medical Promedis,Centrul Medical Promedis,0,0264429099,"Strada Spicului 11, Cluj-Napoca 400394",46.790450216827615,23.572488555255376
+174,185,Asociația Blondie,Asociația Blondie,0,0757494293,"Strada Vultureni nr. 2, București, Romania",44.39342446387193,26.10821055497577
+175,186,Fundația Națională pentru Tineret,Fundația Națională pentru Tineret,0,0763661036,"Strada Căderea Bastiliei 11, București 010611",44.44817980613581,26.09634310759701
+176,187,EvoCariera,EvoCariera,0,0747056266,"Strada Emil Isac nr 6, Cluj-Napoca 400394, Romania",46.7713300000763,23.58483635562205
+177,123,Regina Maria,Campus Medical Somesan,1,0219268,"Aleea Marasti Nr. 1, Baia Mare",47.64385581437226,23.582370168613128
+178,123,Regina Maria,Policlinica Centrul Civic Brasov,1,0729009370,"Str. Mihail Kogalniceanu Nr. 16, Brașov",45.65169937108121,25.608207068535123
+179,123,Regina Maria,Policlinica Traian Brașov,1,0732000006,"Str. Traian Nr. 32A, Brașov",45.647137270817375,25.622861497370277
+180,123,Regina Maria,Policlina Băneasa,1,0219268,"Str. Ion Ionescu de la Brad, nr. 5B, sector 1, Bucuresti",44.497041865609845,26.074225539655846
+181,123,Regina Maria,Policlinica Cotroceni,1,0219268,"Sos. Cotroceni nr. 20, sector 6, Bucuresti",44.437425910524794,26.067736697324342
+182,123,Regina Maria,Policlina Doamna Ghica,1,0219268,"Strada Doamna Ghica Nr. 135, Bucuresti",44.46028762863681,26.135605681983403
+183,123,Regina Maria,Policlinica Enescu,1,0219268,"Str. George Enescu Nr. 12, Bucuresti",44.44272993164854,26.096755697324596
+184,123,Regina Maria,Policlina Floreasca,1,0219268,"Str. Axinte Uricariul, sector 1, București",44.4544528127572,26.099304526160516
+185,123,Regina Maria,Policlinica Perla,1,0219268,"Calea Dorobantilor Nr. 126 - 130, Bucuresti",44.45596197107909,26.09744662616054
+186,123,Regina Maria,Policlina Primăverii,1,0219268,"Piata Charles de Gaulle nr 4-6, București",44.46610797107887,26.08754826848991
+187,123,Regina Maria,Policlinica Sun Plaza,1,0219268,"Calea Vacaresti, nr. 391, sector 4, București",44.39537180501453,26.122986097322887
+188,123,Regina Maria,Policlinica Titu Maiorescu,1,0219268,"Calea Vacaresti nr. 189, sector 4, București",44.413708707416646,26.11500893965259
+189,123,Regina Maria,Policlinia Victoria,1,0219268,"Str. Buzesti nr. 75-77, etaj 3, Sector 1, București",44.45046335288888,26.08358134232907
+190,123,Regina Maria,Policlinica E. Grigorescu,1,0219268,"Str. Iancu de Hunedoara nr.32, Cluj-Napoca",46.768554319814086,23.562173539742975
+191,123,Regina Maria,Policlinica Muzeului,1,0372548701,"Strada Sextil Puscariu, Nr. 2, Cluj-Napoca",46.771080071129,23.588126410907588
+192,123,Regina Maria,Policlinica Observatorului,1,0219268,"Str. Observatorului Nr. 1-3, Cluj-Napoca",46.755589821581786,23.595651810906897
+193,123,Regina Maria,Policlinica Pasteur,1,0219268,"Str. Louis Pasteur nr. 24/72, Cluj-Napoca",46.759752421243014,23.584238068578053
+194,123,Regina Maria,Policlinica Pozimed,1,0341998,"Str. Mircea cel Batran Nr. 102, Constanța",44.182182758971415,28.651011426150273
+195,123,Regina Maria,Polyclinica Tomis,1,0733445008,"Bd. Mamaia nr. 16A - 16B, Constanța",44.18265827720641,28.643267539644004
+196,123,Regina Maria,Campus Medical Iași,1,0736363953,"Strada Grigore Ureche nr.3, bloc W, Iași",47.15904386639566,27.590737526264785
+197,123,Regina Maria,Policlinica Sibiu,1,0219268,"Str. Emil Cioran nr. 6, et. 2 si 3, Sibiu",45.78951540873203,24.146359997375757
+198,123,Regina Maria,Campus Medical Târgu Mureș,1,0722622244,"Str. Gheorghe Marinescu Nr. 49, Targu Mures",46.5571304386819,24.578418455076577
+199,123,Regina Maria,Centru de Medicina Muncii ISHO,1,0219268,"B-dul Take Ionescu nr. 50-52, Cladirea C (faza III), parter, Cam C01, Timișoara",45.761113801109005,21.24379316853925
+200,123,Regina Maria,Policlinica din Iulius Town,1,0372249182,"Str. Aristide Demetriade Nr 1, in incinta Iulius Mall, etaj 1, Timisoara",45.76436284447162,21.23839574201055
+201,123,Regina Maria,Policlinica Bacău,1,0752500300,"Pictor Theodor Aman, nr. 40, Bacău",46.55621282632703,26.912634668570114
+202,123,Regina Maria,Centrul de Fertilitate și FIV Columna,1,0219612,"Str. Tepes Voda nr. 53 (colt cu str. Gheorghe Costa-Foru), București",44.43547844946061,26.12665559732444
+203,123,Regina Maria,Policliniaca Aviației,1,0219268,"Floreasca Park , Soseaua Pipera Nr. 43 sect.1, Bucuresti",44.48177197107857,26.10412385499695
+204,123,Regina Maria,Policlinica Lujerului,1,0729073200,"Bld. Iuliu Maniu nr. 51, sector 6, Bucuresti",44.433496271079484,26.034003668488847
+205,123,Regina Maria,Policlinica Pipera,1,0731039849,"Str. Dimitrie Pompeiu, nr. 9-9A, cladirea 1, parter, sector 2, Bucuresti",44.482552071078594,26.118531897326164
+206,123,Regina Maria,Policlina The Light,1,0733337425,"Bulevardul Iuliu Maniu Nr. 6H, București",44.43492491019688,26.05098956848886
+207,123,Regina Maria,Regina Maria Cluj Oana Nicolau,1,0733303333,"Strada Teodor Mihali, Nr. 42-44, Cluj-Napoca",46.77611582347657,23.620440497414158
+208,123,Regina Maria,Policlinica Universității,1,0219268,"Str. Alexandru Ioan Cuza, Nr. 16C, Craiova",44.31819207108216,23.800966268484522
+209,123,Regina Maria,Pitești Bratianu,1,0219268,"Bulevardul I. C. Bratianu Nr. 48-52, Pitesti",44.86046197107403,24.87083899734034
+210,123,Regina Maria,Policlinica Ploiești,1,0244510051,"Bulevardul Republicii Nr.6. bloc 33, parter, Ploiesti",44.9437303771948,26.01801699734341
+211,123,Regina Maria,Crisan Slatina,1,0729905774,"Str. Crisan, intersectie cu Str. Aleea Infratirii, Slatina",44.43249381937469,24.370236878636685
+212,123,Regina Maria,Policlinica Slatina,1,072317938,"Str. A.I. Cuza, Bl. FA21, parter, Slatina",44.42721194398947,24.36931253348884
+213,123,Regina Maria,Policlina Dr. Grigoras,1,0356912,"Str. Calea Sagului Nr. 20, Timișoara",45.732868359860475,21.208356797373675
+214,123,Regina Maria,Regina Maria Timișoara Oana Nicolau,1,0733303333,"Strada Take Ionescu Nr.50-52 corp C, Cladirea de birouri ISHO, Timișoara",45.76113625606989,21.24379316853925
+215,123,Regina Maria,Spitalul Ponderas Academic,1,0219268,"Str. Nicolae Caramfil 85A, sector 1, Bucuresti",44.4833192363431,26.091670342329074
+216,123,Regina Maria,Spitalul Euroclinic,1,0219268,"Calea Floreasca nr. 14a, sector 1, Bucuresti",44.45450457107911,26.101107126160557
+217,123,Regina Maria,Spitalul Puls,1,0751199709,"Strada Gheorghe Marinescu Nr. 4, Târgu Mureș",46.550537727869774,24.573670268569753
+218,123,Regina Maria,Spitalul Cluj,1,0219268,"Str. Dorobantilor Nr. 29, Cluj",46.77217921931976,23.60246753974306
+219,123,Regina Maria,Spitalul Premiere,1,0356900,"Calea Aradului Nr. 113, Timisoara",45.77945243614209,21.219655797375363
