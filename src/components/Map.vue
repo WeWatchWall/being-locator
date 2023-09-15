@@ -109,8 +109,7 @@ onMounted(() => {
       spiderfyDistanceMultiplier: 2,
       maxClusterRadius: (zoomLevel: number) => {
         return (zoomLevel < Environment.mediumZoom - 1) ? 40 : 20;
-      },
-      disableClusteringAtZoom: Environment.maxZoom
+      }
     });
     mapMarkers.layer.addLayers(mapMarkers.markers);
     map.addLayer(mapMarkers.layer);

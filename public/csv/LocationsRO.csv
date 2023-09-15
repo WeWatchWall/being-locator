@@ -33,7 +33,7 @@ ID,OrgID,Organization,Name,IsNetwork,Telephone,Address,Latitude,Longitude
 32,33,Coalitia pentru Educatie,Coalitia pentru Educatie,0,,"Strada Stelea Spătarul 22, București 030167",44.43174828428266,26.108403897324123
 33,34,AIESEC,AIESEC,0,0723629225,"Str. Rezervelor 61B, București 077040",44.44580112437579,25.987722897225222
 34,35,Academia ThinkUp,Academia ThinkUp,0,,"Aleea Băișoara, Cluj-Napoca 400445, Romania",46.76418402956025,23.6244053386293
-35,36,Uniunea Națională a Studenților din România,Uniunea Națională a Studenților din România,0,0765247311,"Students Cultural House, Calea Plevnei 61, București 010236",44.43696793169507,26.079026368657505
+35,36,Uniunea Națională a Studenților din România,Uniunea Națională a Studenților din România,0,0765247311,"Students Cultural House, Calea Plevnei 61, București 010236",44.43702554986623,26.079060039821446
 36,37,Asociația Young Roma Maramureș,Asociația Young Roma Maramureș,0,0740563641,"Strada Dacia 1, cam. 5, Baia Mare",47.66029774506088,23.581588697617345
 37,38,Grupul PONT,Grupul PONT,0,0757055590,"Strada Horea 5, ap. 7, Cluj-Napoca 400174",46.774981123321574,23.586860226418583
 38,39,Centru Filia,Centru Filia,0,0213138024,"Bulevardul Decebal 14, București 030967",44.42879461145484,26.134341883821136
@@ -50,7 +50,7 @@ ID,OrgID,Organization,Name,IsNetwork,Telephone,Address,Latitude,Longitude
 49,50,Consiliul Județean Cluj,Consiliul Județean Cluj,0,0372640000,"Calea Dorobanților 106, Cluj-Napoca 400609",46.776710075987225,23.616079926418696
 50,51,Academia de Muzică Gheorghe Dima,Academia de Muzică Gheorghe Dima,0,0264591241,"Strada Ion I. C. Brătianu 25, Cluj-Napoca 400079",46.768708773803276,23.592935497582335
 51,52,Asociația Tineri UN România,Asociația Tineri UN România,0,0740130307,"Bulevardul Mihail Kogălniceanu 36-46, București 050107",44.435312735678174,26.08213141265908
-52,53,Uniunea Studenților din România,Uniunea Studenților din România,0,0725535589,"Calea Plevnei 61, București 010223",44.43699061353632,26.07925499749359
+52,53,Uniunea Studenților din România,Uniunea Studenților din România,0,0725535589,"Calea Plevnei 61, București 010223",44.43702554986623,26.079060039821446
 53,55,Universitatea Iuliu Hațiganu pentru Medicină și Farmacie,Universitatea Iuliu Hațiganu pentru Medicină și Farmacie,0,0264597256,"Strada Victor Babeș 8, Cluj-Napoca 400347",46.76163295157663,23.5827986488522
 54,56,Universitatea de Științe Agriculture și Medicină Veterinară din Cluj-Napoca,Universitatea de Științe Agriculture și Medicină Veterinară din Cluj-Napoca,0,0374492010,"Universitatea de Stiinte Agricole si Medicina Veterinara, Calea Mănăștur 3-5, Cluj-Napoca 400372",46.76098387169501,23.570790968745847
 55,57,Universitatea Tehnică din Cluj-Napoca,Universitatea Tehnică din Cluj-Napoca,0,0264401200,"Strada Memorandumului 28, Cluj-Napoca 400114",46.769260893864725,23.585707784457593
