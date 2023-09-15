@@ -95,7 +95,7 @@ onMounted(() => {
           .marker([lat, lng], {
             icon: getIcon(point),
           })
-          .bindTooltip(point.Name, { permanent: isPermanentTooltip, direction: 'bottom', offset: [-12, -12] })
+          .bindTooltip(point.Name, { permanent: isPermanentTooltip, direction: 'bottom', offset: [0, -6] })
           .on('click', function () {
             map.setView([lat, lng]);
             appStore.mapToList.point = point;
