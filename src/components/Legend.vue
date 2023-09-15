@@ -258,14 +258,14 @@
       </v-chip>
       <v-chip
         class="ma-2"
-        color="grey-darken-2"
+        color="teal"
       >
         <v-icon start icon="mdi-checkbox-blank-circle" color="teal"></v-icon>
         {{ appStore.translations[appStore.translations.lang].category.options[8] }}
       </v-chip>
       <v-chip
         class="ma-2"
-        color="grey-darken-2"
+        color="light-blue"
       >
         <v-icon start icon="mdi-checkbox-blank-circle" color="light-blue"></v-icon>
         {{ appStore.translations[appStore.translations.lang].category.options[9] }}

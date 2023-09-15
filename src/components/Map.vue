@@ -19,7 +19,7 @@ function getIcon(point: any): L.Icon {
   return L.icon({
     iconUrl: IconPath.getIcon(point),
     iconSize: [41, 41],
-    iconAnchor: [30, 41],
+    iconAnchor: [20, 41],
     shadowUrl: './css/images/marker-shadow.png',
     shadowSize: [41, 41],
     shadowAnchor: [15, 41]
@@ -108,8 +108,9 @@ onMounted(() => {
     mapMarkers.layer = window.L.markerClusterGroup({
       spiderfyDistanceMultiplier: 2,
       maxClusterRadius: (zoomLevel: number) => {
-        return (zoomLevel < Environment.mediumZoom - 1) ? 30 : 10;
-      }
+        return (zoomLevel < Environment.mediumZoom - 1) ? 40 : 20;
+      },
+      disableClusteringAtZoom: Environment.maxZoom
     });
     mapMarkers.layer.addLayers(mapMarkers.markers);
     map.addLayer(mapMarkers.layer);
