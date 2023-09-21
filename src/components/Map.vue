@@ -57,6 +57,7 @@ onMounted(() => {
     ];
 
     currentIsMediumZoom.value = map.getZoom() > Environment.mediumZoom;
+    appStore.list1.page = 1;
   });
   watch(currentIsMediumZoom, (mutation, _state) => {
     updateMarkers(appStore.list.filter, mutation);
@@ -69,6 +70,7 @@ onMounted(() => {
       [bounds.getSouthWest().lat, bounds.getSouthWest().lng],
       [bounds.getNorthEast().lat, bounds.getNorthEast().lng]         
     ];
+    appStore.list1.page = 1;
   });
   /* #endregion */
 
@@ -108,7 +110,7 @@ onMounted(() => {
     mapMarkers.layer = window.L.markerClusterGroup({
       spiderfyDistanceMultiplier: 2,
       maxClusterRadius: (zoomLevel: number) => {
-        return (zoomLevel < Environment.mediumZoom - 1) ? 40 : 20;
+        return (zoomLevel < Environment.mediumZoom - 1) ? 30 : 10;
       }
     });
     mapMarkers.layer.addLayers(mapMarkers.markers);
