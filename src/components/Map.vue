@@ -18,11 +18,11 @@ const heightStyle = `height: ${Environment.mapHeightPx}px;}`;
 function getIcon(point: any): L.Icon {
   return L.icon({
     iconUrl: IconPath.getIcon(point),
-    iconSize: [41, 41],
-    iconAnchor: [20, 41],
+    iconSize: [50, 50],
+    iconAnchor: [25, 50],
     shadowUrl: './css/images/marker-shadow.png',
-    shadowSize: [41, 41],
-    shadowAnchor: [15, 41]
+    shadowSize: [50, 50],
+    shadowAnchor: [15, 50]
   });
 }
 
