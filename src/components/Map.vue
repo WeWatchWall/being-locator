@@ -11,6 +11,8 @@ import { useAppStore } from '@/store/app';
 import { IconPath } from './IconPath';
 import { Environment } from '@/env';
 
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiYWRyaWFuLWJ1cmxhY3UiLCJhIjoiY2xvMzNzem9uMjhxazJubXh6anV1eHo0eSJ9.Vc3KIBTB2bXXtFlW5GB26Q';
+
 const appStore = useAppStore();
 const heightStyle = `height: ${Environment.mapHeightPx}px;}`;
 
@@ -39,10 +41,12 @@ onMounted(() => {
       Environment.mapBoundNorthEast
     ]);
 
-  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  L.tileLayer(`https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=${MAPBOX_TOKEN}`, {
     minZoom: Environment.minZoom,
     maxZoom: Environment.maxZoom,
-    attribution: '© OpenStreetMap'
+    tileSize: 512,
+    zoomOffset: -1,
+    attribution: '© <a href="https://www.mapbox.com/contribute/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
   /* #endregion */
 
