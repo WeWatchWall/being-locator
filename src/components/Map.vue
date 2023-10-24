@@ -11,7 +11,7 @@ import { useAppStore } from '@/store/app';
 import { IconPath } from './IconPath';
 import { Environment } from '@/env';
 
-const MAPBOX_TOKEN = 'pk.eyJ1IjoiYWRyaWFuLWJ1cmxhY3UiLCJhIjoiY2xvMzNzem9uMjhxazJubXh6anV1eHo0eSJ9.Vc3KIBTB2bXXtFlW5GB26Q';
+const MAPBOX_TOKEN = 'pk.eyJ1IjoiaW5pbWluc3RpdHV0ZSIsImEiOiJjbG80OW80emEwMDBlMmlwYm1sOTY5N3cyIn0.MalzPFJTE7k58S5cg-qbKg';
 
 const appStore = useAppStore();
 const heightStyle = `height: ${Environment.mapHeightPx}px;}`;
